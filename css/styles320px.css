@@ -1,0 +1,287 @@
+@font-face{
+    font-family: "Quantum";
+    src: url("../Fonts/Quantum.otf");
+}
+
+
+@media screen and (max-width: 320px)
+{
+
+
+body{
+    font-family: "Quantum";
+    color: aliceblue;
+}
+
+
+.lista a{
+    color: aliceblue;
+}
+    
+    
+header{
+    display: inline-block;
+    flex-direction: row;
+}
+    
+
+.ToroIzq{
+    margin-left: 95px;
+    margin-top: 5px;
+    border-radius: 100%;
+    border-style: none;
+    width: 130px;
+}
+ 
+
+.textoCv{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
+    margin-left: 35px;
+}
+    
+    
+.texto2{
+    font-size: 22px;
+    margin-left: 20px;
+}
+    
+    
+.ToroDer{
+    display: none;
+    border-radius: 100%;
+    margin-right: 0px;
+}
+       
+    
+.lista {
+    position: absolute;
+    display: flex;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px ;
+    grid-template-rows: 20px 20px;
+}
+    
+
+ul ul{
+    position: absolute;
+    display: none;
+}
+    
+    
+ul ul li{
+    display: block;
+}
+    
+
+ul li:hover ul{
+    display: block;
+    line-height: 35px;
+}
+    
+    
+.texto__Index{
+    position: absolute;
+    display: block;
+    width: 315px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+    
+    
+.Torovsbear{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin-left: 450px;
+    margin-top: 250px;
+}
+    
+    
+.Torovsbear1{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 1300px;
+}
+    
+    
+.Torovsbear2{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin-top: 350px;
+    margin-left: 900px;
+}
+    
+    
+.footer{
+
+    margin-top: 500px;
+    margin-left: 0px;
+    height: 25px;
+    padding-top: 2px;
+    font-style: oblique;
+    color: rgb(160, 131, 131);
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+    border-width: 2px;
+    font-size: 8px;
+}
+    
+    
+.logos{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 400px;
+    margin-left: 0px;
+    width: 300px;
+    height: 50px;
+}
+    
+    
+.texto-Objetivos{
+    position: absolute;
+    display: block;
+    width: 315px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+    
+    
+.texto-Asesorias{
+    position: absolute;
+    display: block;
+    width: 315px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+    
+    
+.texto-Brokers{
+    position: absolute;
+    display: block;
+    width: 315px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+    
+    
+.texto-Inversiones{
+    position: absolute;
+    display: block;
+    width: 315px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+    
+    
+.texto-Instrumentos{
+    position: absolute;
+    display: block;
+    width: 315px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+
+.texto-Contactanos{
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    font-size: 26px;
+    margin-right: 350px;
+    margin-left: 300px;
+}
+    
+    
+.fotosbrokers{
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 350px;
+    margin-left: 150px;
+}
+    
+    
+.datospersonales{
+    display: inline-flex;
+    position: absolute;
+    font-size: small;
+    margin-left: 0px;
+    margin-top: 60px;
+    flex-direction: column;
+    line-height: 35px;
+}
+    
+    
+.botones{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+    
+    
+.video{
+    width: 250px;
+    height: 175px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 100px;
+    border-width: 2px;
+    border-style: groove;
+    padding: 10px 10px 10px 10px;
+    border-color: bisque;
+}
+    
+    
+.grids{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 20px;
+    border-color: aliceblue;
+}
+
+
+.texto-robot{
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    font-size: 26px;
+    margin-right: 350px;
+    margin-left: 300px;
+}
+}
+    
