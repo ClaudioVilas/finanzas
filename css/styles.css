@@ -1,10 +1,11 @@
 @font-face{
-    font-family: "quantum";
-    src: url("../Fonts/quantum.otf");
+    font-family: "Tiro";
+    src: url("../Fonts/Ubuntu-Medium.ttf");
 }
 
+
 body{
-    font-family: "Quantum";
+    font-family: "Tiro";
     color: aliceblue;
     background-color: rgb(0, 0, 0);
 }
@@ -25,7 +26,6 @@ header{
 .toroizq{
     border-radius: 100%;
     border-style: none;
-    position: sticky;
 }
 
 
@@ -33,7 +33,6 @@ header{
     text-align: center;
     font-style: italic;
     font-size: 40px;
-
     animation: move2 7s ease ;
 }
 
@@ -64,6 +63,7 @@ header{
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
+
 
 ul ul {
     position: absolute;
@@ -285,7 +285,46 @@ margin-top: 15px;
 #floatingTextarea2{
     width: 800px;
     height: 100px;
-    font-size: x-large;
+    font-size: large;
     text-align: center;
     margin-top: 10px;
+}
+
+
+.transparente{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: inline;
+    opacity: 95%;
+    background-color: rgb(99, 98, 96);
+}
+
+
+.landingtext{
+    text-align: center;
+    position: absolute;
+    opacity: 100%;
+    margin-left: 180px;
+    margin-top: 60px;
+    background-color: rgb(0, 0, 0);
+    width: 1500px;
+    height: 800px;
+
+}
+
+
+.ajustetexto{
+    margin-top: 45px;
+}
+
+
+.botoneslanding{
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+
+.datoslandin{
+    padding-top: 7px;
 }
