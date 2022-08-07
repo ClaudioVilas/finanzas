@@ -4,7 +4,7 @@
 }
 
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 1028px)
 {
 
 
@@ -155,7 +155,7 @@ ul li:hover ul{
 }
     
     
-.texto-Objetivos{
+.texto-objetivos{
     position: absolute;
     display: block;
     width: 315px;
@@ -163,7 +163,8 @@ ul li:hover ul{
     font-size: 16px;
     letter-spacing: 3px;
     margin-left: 0px;
-    margin-top: 70px;
+    margin-top: 500px;
+    width: 375px;
 }
     
     
