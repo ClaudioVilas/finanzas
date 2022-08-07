@@ -20,14 +20,14 @@ body{
     
     
 header{
-    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: inline-block;
     width: 375px;
 }
     
 
 .toroizq{
-    margin-left: 0px;
-    margin-top: 0px;
     border-radius: 100%;
     border-style: none;
 }
@@ -61,6 +61,7 @@ header{
     display: flex;
     font-size: 10px;
     display: grid;
+    margin-top: 430px;
     grid-template-columns: 75px 75px 75px 75px ;
     grid-template-rows: 20px 20px;
 }
@@ -83,7 +84,7 @@ ul li:hover ul{
 }
     
     
-.texto__Index{
+.texto__index{
     position: absolute;
     display: block;
     width: 315px;
@@ -91,11 +92,12 @@ ul li:hover ul{
     font-size: 16px;
     letter-spacing: 3px;
     margin-left: 0px;
-    margin-top: 70px;
+    margin-top: 500px;
+    width: 375px;
 }
     
     
-.Torovsbear{
+.torovsbear{
     display: none;
     position: absolute;
     width: 500px;
@@ -105,7 +107,7 @@ ul li:hover ul{
 }
     
     
-.Torovsbear1{
+.torovsbear1{
     display: none;
     position: absolute;
     width: 500px;
@@ -115,7 +117,7 @@ ul li:hover ul{
 }
     
     
-.Torovsbear2{
+.torovsbear2{
     display: none;
     position: absolute;
     width: 500px;
@@ -126,9 +128,10 @@ ul li:hover ul{
     
     
 .footer{
-
-    margin-top: 500px;
-    margin-left: 0px;
+    position: absolute;
+    display: flex;
+    margin-top: 750px;
+    width: 360px;
     height: 25px;
     padding-top: 2px;
     font-style: oblique;
@@ -137,18 +140,18 @@ ul li:hover ul{
     border-style: dashed;
     border-width: 2px;
     font-size: 8px;
+
 }
     
-    
 .logos{
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 400px;
+    margin-top: 650px;
     margin-left: 0px;
-    width: 300px;
+    width: 375px;
     height: 50px;
+    justify-content: space-around;
 }
     
     
