@@ -1,6 +1,6 @@
 @font-face{
-    font-family: "Quantum";
-    src: url("../Fonts/Quantum.otf");
+    font-family: "Tiro";
+    src: url("../Fonts/Ubuntu-Medium.ttf");
 }
 
 
@@ -9,7 +9,7 @@
 
 
 body{
-    font-family: "Quantum";
+    font-family: "Tiro";
     color: aliceblue;
 }
 
@@ -21,20 +21,19 @@ body{
     
 header{
     display: inline-block;
-    flex-direction: row;
+    flex-direction: column;
 }
     
 
-.ToroIzq{
-    margin-left: 95px;
+.toroizq{
+    margin-left: 50px;
     margin-top: 5px;
     border-radius: 100%;
     border-style: none;
-    width: 130px;
 }
  
 
-.textoCv{
+.textocv{
     display: block;
     text-align: center;
     font-style: italic;
@@ -45,11 +44,10 @@ header{
     
 .texto2{
     font-size: 22px;
-    margin-left: 20px;
 }
     
     
-.ToroDer{
+.toroder{
     display: none;
     border-radius: 100%;
     margin-right: 0px;
@@ -282,6 +280,26 @@ ul li:hover ul{
     font-size: 26px;
     margin-right: 350px;
     margin-left: 300px;
+}
+
+
+.ajustetexto{
+    font-size: x-small;
+}
+
+
+.form-floating{
+    display: none;
+}
+
+
+.transparente{
+    display: none;
+}
+
+
+.subtitulo{
+    display: none;
 }
 }
     
