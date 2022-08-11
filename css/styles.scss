@@ -11,30 +11,28 @@ body{
 }
 
 
-.lista li {
+.lista a{
+    color: aliceblue;
+}
 
 
-    li {
+ul {
+    ul {
+    display: block;
+    position: absolute;
+    display: none;
+    li{
         display: block;
-        position: absolute;
-        display: none; 
-        color: rgb(255, 255, 255);
-    
-    a {
-        display: block;
-        color: rgb(255, 255, 255);
-  
-    
-   ul{
-    li:hover ul{
-        display: block;
-        line-height: 35px;
-        color: rgb(255, 255, 255);
-} 
-}  
-}  
+    }
 }
 }
+
+
+ul li:hover ul{
+    display: block;
+    line-height: 35px;
+}
+
 
 
 header{
@@ -258,7 +256,14 @@ margin-top: 15px;
 
 .ajustetexto{
     margin-top: 45px;
-}
+        h1{ 
+            letter-spacing: 10px;}
+        h2{ 
+            letter-spacing: 5px;
+            color: aqua;
+        }
+    }
+
 
 
 .botoneslanding{
