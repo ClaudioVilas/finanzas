@@ -4,6 +4,9 @@
 }
 
 
+@import "variables";
+
+
 body{
     font-family: "Tiro";
     color: rgb(255, 255, 255);
@@ -11,30 +14,28 @@ body{
 }
 
 
-.lista li {
+.lista a{
+    color: aliceblue;
+}
 
 
-    li {
+ul {
+    ul {
+    display: block;
+    position: absolute;
+    display: none;
+    li{
         display: block;
-        position: absolute;
-        display: none; 
-        color: rgb(255, 255, 255);
-    
-    a {
-        display: block;
-        color: rgb(255, 255, 255);
-  
-    
-   ul{
-    li:hover ul{
-        display: block;
-        line-height: 35px;
-        color: rgb(255, 255, 255);
-} 
-}  
-}  
+    }
 }
 }
+
+
+ul li:hover ul{
+    display: block;
+    line-height: 35px;
+}
+
 
 
 header{
@@ -86,19 +87,6 @@ header{
     margin-bottom: 50px;
     margin-top: 350px;
      width: 100%;
-}
-
-
-.texto__index {
-    position: absolute;
-    margin-top: 450px;
-    margin-left: 150px;
-    text-align: left;
-    font-style: italic;
-    font-size: 26px;
-    letter-spacing: 3px;
-    width: 1100px;
-    height: 300px;
 }
 
 
@@ -155,16 +143,17 @@ header{
 }
 
 
-.texto-objetivos , .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot{
+.texto__index, .texto-objetivos , .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot{
     position: absolute;
     margin-top: 450px;
     margin-left: 150px;
     text-align: left;
-    font-style: italic;
+    font-style: $font-style;
     font-size: 26px;
     letter-spacing: 3px;
     width: 1100px;
     height: 300px;
+    color: $font-color;
 }
 
 
@@ -258,7 +247,14 @@ margin-top: 15px;
 
 .ajustetexto{
     margin-top: 45px;
-}
+        h1{ 
+            letter-spacing: 10px;}
+        h2{ 
+            letter-spacing: 5px;
+            color: aqua;
+        }
+    }
+
 
 
 .botoneslanding{
