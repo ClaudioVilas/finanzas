@@ -26,12 +26,12 @@ body{
   
     
    ul{
-    li:hover {
+    li:hover ul{
         display: block;
         line-height: 35px;
         color: rgb(255, 255, 255);
-   } 
-    }  
+} 
+}  
 }  
 }
 }
