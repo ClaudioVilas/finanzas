@@ -148,14 +148,14 @@ header {
   letter-spacing: 3px;
   width: 1100px;
   height: 300px;
-  color: rgb(221, 15, 15);
+  color: rgb(255, 255, 255);
 }
 
 .texto-contactanos {
   display: inline-block;
   text-align: center;
   font-style: italic;
-  font-size: 26px;
+  font-size: 52px;
   margin-right: 350px;
   margin-left: 300px;
 }
