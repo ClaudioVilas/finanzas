@@ -289,6 +289,7 @@ button{
     height: 15%;
     width: 13%;
     font-size: 17px;
+    background-color: map-get($colors, "primario");
 &:hover{
     background-color: green;
     transition: 1s;
@@ -296,7 +297,8 @@ button{
     }
  }
 
-.datoslandin{
+
+ .datoslandin{
     padding-top: 7px;
 }
 

@@ -263,6 +263,7 @@ header {
   height: 15%;
   width: 13%;
   font-size: 17px;
+  background-color: red;
 }
 .botoneslanding button:hover {
   background-color: green;
