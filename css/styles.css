@@ -339,16 +339,23 @@ header {
   }
   .texto__index, .texto-objetivos, .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot {
     position: absolute;
-    display: block;
-    width: 315px;
+    display: inline;
     text-align: left;
     font-size: 16px;
     letter-spacing: 3px;
     margin-left: 0px;
     margin-top: 500px;
-    width: 375px;
   }
-  .torovsbear, .torovsbear1, .torovsbear2 {
+  .logos {
+    position: absolute;
+    flex-direction: row;
+    margin-top: 750px;
+    margin-left: 0px;
+    width: 375px;
+    height: 30px;
+    justify-content: space-around;
+  }
+  .torovsbear, .torovsbear1, .torovsbear2, .fotosbrokers {
     display: none;
   }
   .footer {
@@ -372,16 +379,6 @@ header {
     font-size: 26px;
     margin-right: 350px;
     margin-left: 300px;
-  }
-  .fotosbrokers {
-    display: flex;
-    flex-direction: row;
-    justify-items: auto;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-top: 350px;
-    margin-left: 150px;
   }
   .datospersonales {
     display: inline-flex;
@@ -417,16 +414,6 @@ header {
     font-size: 26px;
     margin-right: 350px;
     margin-left: 300px;
-  }
-  .logos {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    margin-top: 750px;
-    margin-left: 0px;
-    width: 375px;
-    height: 50px;
-    justify-content: space-around;
   }
   .ajustetexto {
     font-size: x-small;
