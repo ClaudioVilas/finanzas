@@ -156,8 +156,6 @@ header{
     font-style: $font-style;
     font-size: $font-size / 2;
     letter-spacing: 3px;
-    width: 1100px;
-    height: 300px;
     color: $font-color;
 }
 
@@ -172,7 +170,6 @@ header{
 .texto__index, .texto-objetivos , .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot{
 @include textosvarios(24%, 150px, left)
 }
-
 
 
 .texto-contactanos{
