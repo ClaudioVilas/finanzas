@@ -324,18 +324,20 @@ header {
     width: 100px;
     height: 30px;
   }
+  .lista a {
+    color: aliceblue;
+    font-size: 11.5555555556px;
+    display: block;
+  }
+  ul {
+    list-style-type: none;
+  }
   ul ul {
+    display: block;
     position: absolute;
     display: none;
   }
-  ul ul li {
-    display: block;
-  }
-  ul li:hover ul {
-    display: block;
-    line-height: 35px;
-  }
-  .texto__index {
+  .texto__index, .texto-objetivos, .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot {
     position: absolute;
     display: block;
     width: 315px;
@@ -346,29 +348,8 @@ header {
     margin-top: 500px;
     width: 375px;
   }
-  .torovsbear {
+  .torovsbear, .torovsbear1, .torovsbear2 {
     display: none;
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    margin-left: 450px;
-    margin-top: 250px;
-  }
-  .torovsbear1 {
-    display: none;
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 1300px;
-  }
-  .torovsbear2 {
-    display: none;
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    margin-top: 350px;
-    margin-left: 900px;
   }
   .footer {
     position: absolute;
@@ -383,61 +364,6 @@ header {
     border-style: dashed;
     border-width: 2px;
     font-size: 8px;
-  }
-  .texto-objetivos {
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-  }
-  .texto-asesorias {
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-  }
-  .texto-brokers {
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-  }
-  .texto-inversiones {
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-  }
-  .texto-instrumentos {
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
   }
   .texto-Contactanos {
     display: inline-block;
@@ -483,12 +409,6 @@ header {
     border-style: groove;
     padding: 10px 10px 10px 10px;
     border-color: bisque;
-  }
-  .grids {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 50px 20px;
-    border-color: aliceblue;
   }
   .texto-robot {
     display: inline-block;
