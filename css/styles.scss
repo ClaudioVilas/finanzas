@@ -9,8 +9,7 @@
 
 @if $font-color != rgb(255, 255, 255){
     .toroizq {
-         display: none;}
-       
+         display: none;}  
 }
 
 
@@ -23,7 +22,7 @@ body{
 
 .lista a{
     color: aliceblue;
-    font-size: $font-size / 2.5;
+    font-size: ($font-size / 2.5);
 }
 
 
@@ -306,137 +305,125 @@ button{
 
 /* Medidas para Iphone X 375 PX */
 
-@font-face{
-    font-family: "Tiro";
-    src: url("../Fonts/Ubuntu-Medium.ttf");
-}
 
-
-@media screen and (max-width: 375px)
+@media screen and (max-width: 375px), (max-width: 414px)
 {
 
 
-body{
-    font-family: "Tiro";
-    color: aliceblue;
+.transparente{
+    display: none;
 }
 
 
-.lista a{
-    color: aliceblue;
-}
-    
-    
 header{
-    margin-left: 0px;
-    margin-top: 0px;
-    display: inline-block;
-    width: 375px;
+    display: block;
 }
     
-
 .toroizq{
     border-radius: 100%;
     border-style: none;
 }
- 
+
+        
+.toroder{
+    display: none;
+}
+
+        
+.toroder{
+    display: none;
+    border-radius: 100%;
+    margin-right: 0px;
+}
+
 
 .textocv{
     display: block;
     text-align: center;
     font-style: italic;
     font-size: 28px;
-    margin-left: 0px;
-    width: 375px;
 }
-    
-    
+
+
 .texto2{
     font-size: 22px;
-    width: 375px;
 }
-    
-    
-.toroder{
-    display: none;
-    border-radius: 100%;
-    margin-right: 0px;
+
+
+.lista a{
+        color: aliceblue;
 }
-       
-    
+           
+        
 .lista {
-    position: absolute;
-    display: flex;
-    font-size: 10px;
-    display: grid;
-    justify-content: left;
-    margin-top: 430px;
-    grid-template-columns: 75px 75px 75px 75px ;
-    grid-template-rows: 20px 20px;
-    margin-left: 5px;
+        position: absolute;
+        display: flex;
+        font-size: 10px;
+        display: grid;
+        justify-content: left;
+        margin-top: 430px;
+        grid-template-columns: 75px 75px 75px 75px ;
+        grid-template-rows: 20px 20px;
+        margin-left: 5px;
 }
-    
+ 
 
-ul ul{
-    position: absolute;
-    display: none;
+.botoneslanding{
+    a, a button, button{
+        margin-top: 8%;
+        font-size: 12px;
+        width: 100px;
+        height: 30px;
 }
-    
-    
-ul ul li{
-    display: block;
 }
-    
+ 
 
-ul li:hover ul{
+.lista a{
+    color: aliceblue;
+    font-size: ($font-size / 4.5);
     display: block;
-    line-height: 35px;
 }
-    
-    
-.texto__index{
+
+
+ul {
+    list-style-type: none;
+
+        ul {
+            display: block;
+            position: absolute;
+            display: none;
+
+}
+}   
+
+        
+.texto__index, .texto-objetivos , .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot{
     position: absolute;
-    display: block;
-    width: 315px;
+    display: inline;
     text-align: left;
     font-size: 16px;
     letter-spacing: 3px;
     margin-left: 0px;
     margin-top: 500px;
+}
+
+    
+.logos{
+    position: absolute;
+    flex-direction: row;
+    margin-top: 750px;
+    margin-left: 0px;
     width: 375px;
+    height: 30px;
+    justify-content: space-around;
 }
-    
-    
-.torovsbear{
-    display: none;
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    margin-left: 450px;
-    margin-top: 250px;
-}
-    
-    
-.torovsbear1{
-    display: none;
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 1300px;
-}
-    
-    
-.torovsbear2{
-    display: none;
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    margin-top: 350px;
-    margin-left: 900px;
-}
-    
-    
+
+        
+.torovsbear, .torovsbear1, .torovsbear2, .fotosbrokers{
+        display: none;
+}      
+        
+
 .footer{
     position: absolute;
     display: flex;
@@ -450,75 +437,10 @@ ul li:hover ul{
     border-style: dashed;
     border-width: 2px;
     font-size: 8px;
-
-}
-    
-    
-.texto-objetivos{
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-}
-    
-    
-.texto-asesorias{
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-}
-    
-    
-.texto-brokers{
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-}
-    
-    
-.texto-inversiones{
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
-}
-    
-    
-.texto-instrumentos{
-    position: absolute;
-    display: block;
-    width: 315px;
-    text-align: left;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-left: 0px;
-    margin-top: 500px;
-    width: 375px;
 }
 
-
+    
+    
 .texto-Contactanos{
     display: inline-block;
     text-align: center;
@@ -527,20 +449,8 @@ ul li:hover ul{
     margin-right: 350px;
     margin-left: 300px;
 }
-    
-    
-.fotosbrokers{
-    display: flex;
-    flex-direction: row;
-    justify-items: auto;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-top: 350px;
-    margin-left: 150px;
-}
-    
-    
+        
+        
 .datospersonales{
     display: inline-flex;
     position: absolute;
@@ -550,16 +460,16 @@ ul li:hover ul{
     flex-direction: column;
     line-height: 35px;
 }
-    
-    
+        
+        
 .botones{
     display: flex;
     justify-items: center;
     justify-content: space-around;
     margin-top: 15px;
 }
-    
-    
+        
+        
 .video{
     width: 250px;
     height: 175px;
@@ -571,17 +481,9 @@ ul li:hover ul{
     border-style: groove;
     padding: 10px 10px 10px 10px;
     border-color: bisque;
-}
+}  
+   
     
-    
-.grids{
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 50px 20px;
-    border-color: aliceblue;
-}
-
-
 .texto-robot{
     display: inline-block;
     text-align: center;
@@ -590,35 +492,23 @@ ul li:hover ul{
     margin-right: 350px;
     margin-left: 300px;
 }
-
-
-.logos{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    margin-top: 750px;
-    margin-left: 0px;
-    width: 375px;
-    height: 50px;
-    justify-content: space-around;
-}
-
-
+    
+    
 .ajustetexto{
     font-size: x-small;
 }
-
-
+    
+    
 .form-floating{
     display: none;
 }
-
-
+    
+    
 .subtitulo{
     display: none;
 }
-
-
+    
+    
 .landingtext{
     margin-left: 0px;
     margin-top: 0px;
@@ -628,3 +518,6 @@ ul li:hover ul{
     width: 375px;
 }
 }
+    
+        
+    
