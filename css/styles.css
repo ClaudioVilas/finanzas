@@ -255,10 +255,9 @@ header {
 
 .botoneslanding {
   justify-content: space-around;
-  margin-top: 15px;
+  margin-top: 1%;
 }
 .botoneslanding button {
-  height: 15%;
   width: 13%;
   font-size: 17px;
   background-color: red;
