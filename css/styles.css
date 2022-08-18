@@ -276,7 +276,7 @@ header {
 }
 
 /* Medidas para Iphone X 375 PX */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 414px) {
   .transparente {
     display: none;
   }
