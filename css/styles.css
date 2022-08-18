@@ -276,44 +276,36 @@ header {
 }
 
 /* Medidas para Iphone X 375 PX */
-@font-face {
-  font-family: "Tiro";
-  src: url("../Fonts/Ubuntu-Medium.ttf");
-}
 @media screen and (max-width: 375px) {
-  body {
-    font-family: "Tiro";
-    color: aliceblue;
-  }
-  .lista a {
-    color: aliceblue;
+  .transparente {
+    display: none;
   }
   header {
-    margin-left: 0px;
-    margin-top: 0px;
-    display: inline-block;
-    width: 375px;
+    display: block;
   }
   .toroizq {
     border-radius: 100%;
     border-style: none;
+  }
+  .toroder {
+    display: none;
+  }
+  .toroder {
+    display: none;
+    border-radius: 100%;
+    margin-right: 0px;
   }
   .textocv {
     display: block;
     text-align: center;
     font-style: italic;
     font-size: 28px;
-    margin-left: 0px;
-    width: 375px;
   }
   .texto2 {
     font-size: 22px;
-    width: 375px;
   }
-  .toroder {
-    display: none;
-    border-radius: 100%;
-    margin-right: 0px;
+  .lista a {
+    color: aliceblue;
   }
   .lista {
     position: absolute;
@@ -325,6 +317,12 @@ header {
     grid-template-columns: 75px 75px 75px 75px;
     grid-template-rows: 20px 20px;
     margin-left: 5px;
+  }
+  .botoneslanding a, .botoneslanding a button, .botoneslanding button {
+    margin-top: 8%;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
   }
   ul ul {
     position: absolute;
