@@ -1,16 +1,14 @@
 @font-face{
     font-family: "Tiro";
     src: url("../fonts/ubuntu-medium.ttf");
+    color: rgb(255, 255, 255);
 }
 
 
 @import "variables";
 
 
-@if $font-color != rgb(255, 255, 255){
-    .toroizq {
-         display: none;}  
-}
+
 
 
 body{
@@ -250,6 +248,8 @@ header{
 
 
 .encabezado{
+    font-family: "Tiro";
+    color: rgb(255, 255, 255);
     margin-top: 1%;
     display: flex;
     justify-content: space-between;
@@ -268,6 +268,8 @@ header{
 
 
 .textoinicio{
+    font-family: "Tiro";
+    color: rgb(255, 255, 255);
     margin-top: 3%;
     font-size: 200%;
     text-align: center;
@@ -278,6 +280,8 @@ header{
 }
 
 h1{
+    font-family: "Tiro";
+    color: rgb(255, 255, 255);
     padding-top: 1%;
     font-size: 275%;
     text-align: center;
@@ -322,6 +326,8 @@ h1{
     text-align: center;
     margin-top: 2%;
     position: relative;
+    font-family: "Tiro";
+    color: rgb(255, 255, 255);
 
 button{
     width: 13%;
@@ -336,6 +342,8 @@ button{
 
 
  .datoslandin{
+    font-family: "Tiro";
+    color: rgb(255, 255, 255);
     padding-top: 1%;
     font-size: x-large;
     text-align: center;
@@ -345,6 +353,7 @@ button{
 
 .comentarios{
     padding-top: 2%;
+    margin-left: 16%;
     text-align: center;
     position: relative;
 }
@@ -411,7 +420,7 @@ header{
         font-size: 10px;
         display: grid;
         justify-content: left;
-        margin-top: 430px;
+        margin-top: 5%;
         grid-template-columns: 75px 75px 75px 75px ;
         grid-template-rows: 20px 20px;
         margin-left: 5px;
