@@ -66,26 +66,19 @@ body {
     transform: translate(0%, 0);
   }
 }
-.lista {
+.textoindex, .textoobjetivos, .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot {
   position: absolute;
-  font-size: large;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
-  margin-top: 360px;
-  width: 95%;
-}
-
-.textoindex, .texto-objetivos, .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot {
-  position: absolute;
-  display: inline-block;
-  margin-top: 5%;
-  margin-left: 9%;
+  display: block;
   font-style: italic;
   font-size: 26px;
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
+}
+
+.textoindex, .textoobjetivos, .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot {
+  margin-top: 5%;
+  margin-left: 9%;
+  text-align: left;
 }
 
 .torovsbear {
@@ -93,7 +86,7 @@ body {
   width: 500px;
   height: 300px;
   margin-left: 30%;
-  margin-top: 15%;
+  margin-top: 17%;
 }
 
 .torovsbear1 {
@@ -114,18 +107,13 @@ body {
 
 .footer {
   position: absolute;
-  display: block;
-  margin-top: 10%;
-  height: 35px;
-  padding-top: 13px;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  margin-top: 3%;
+  margin-left: 65%;
+  padding-top: 2px;
   font-style: oblique;
-  text-align: center;
-  color: rgb(160, 131, 131);
-  border-color: rgb(255, 255, 255);
-  border-style: dashed;
-  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }
 
 .logos {
@@ -134,14 +122,8 @@ body {
   justify-content: space-between;
   width: 50px;
   height: 300px;
-  margin-left: 25px;
-  margin-top: 450px;
-}
-
-.texto__index, .texto-objetivos, .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot {
-  margin-top: 24%;
-  margin-left: 150px;
-  text-align: left;
+  margin-left: 2%;
+  margin-top: 5%;
 }
 
 .texto-contactanos {
@@ -341,21 +323,6 @@ h1 {
     display: none;
   }
 }
-.footer {
-  position: absolute;
-  display: flex;
-  margin-top: 830px;
-  width: 360px;
-  height: 25px;
-  padding-top: 2px;
-  font-style: oblique;
-  color: rgb(160, 131, 131);
-  border-color: rgb(255, 255, 255);
-  border-style: dashed;
-  border-width: 2px;
-  font-size: 8px;
-}
-
 .texto-Contactanos {
   display: inline-block;
   text-align: center;

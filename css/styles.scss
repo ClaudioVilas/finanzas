@@ -58,35 +58,34 @@ body{
 }
    
 
-.lista {
+.textoindex, .textoobjetivos , .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot{
     position: absolute;
-    font-size: large;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    margin-top: 360px;
-    width: 95%;
-}
-
-
-.textoindex, .texto-objetivos , .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot{
-    position: absolute;
-    display: inline-block;
-    margin-top: 5%;
-    margin-left: 9%;
+    display: block;
     font-style: $font-style;
     font-size: $font-size / 2;
     letter-spacing: 3px;
     color: $font-color;
 }
 
+
+@mixin textosvarios ($argumento1, $arguemnto2, $argumento3) {
+    margin-top: $argumento1;
+    margin-left: $arguemnto2;
+    text-align: $argumento3; 
+}
+
+
+.textoindex, .textoobjetivos , .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot{
+@include textosvarios(5%, 9%, left)
+}
+
+
 .torovsbear{
     position: absolute;
     width: 500px;
     height: 300px;
     margin-left: 30%;
-    margin-top: 15%;
+    margin-top: 17%;
 }
 
 
@@ -110,19 +109,13 @@ body{
 
 .footer{
     position: absolute;
-    display: block;
-    margin-top: 10%;
-    height: 35px;
-    padding-top: 13px;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    margin-top: 3%;
+    margin-left: 65%;
+    padding-top: 2px;
     font-style: oblique;
-    text-align: center;
-    color: rgb(160, 131, 131);
-    border-color: rgb(255, 255, 255);
-    border-style: dashed;
-    font-size: 16px;
-
+    color: rgb(255, 255, 255);
+    font-size: 18px;
 }
 
 
@@ -132,21 +125,8 @@ body{
     justify-content: space-between;
     width: 50px;
     height: 300px;
-    margin-left: 25px;
-    margin-top: 450px;
-}
-
-
-
-@mixin textosvarios ($argumento1, $arguemnto2, $argumento3) {
-    margin-top: $argumento1;
-    margin-left: $arguemnto2;
-    text-align: $argumento3; 
-}
-
-
-.texto__index, .texto-objetivos , .texto-asesorias, .texto-brokers, .texto-inversiones, .texto-instrumentos, .texto-robot{
-@include textosvarios(24%, 150px, left)
+    margin-left: 2%;
+    margin-top: 5%;
 }
 
 
@@ -389,23 +369,7 @@ ul {
         display: none;
 }      
 }        
-
-.footer{
-    position: absolute;
-    display: flex;
-    margin-top: 830px;
-    width: 360px;
-    height: 25px;
-    padding-top: 2px;
-    font-style: oblique;
-    color: rgb(160, 131, 131);
-    border-color: rgb(255, 255, 255);
-    border-style: dashed;
-    border-width: 2px;
-    font-size: 8px;
-}
-
-    
+   
     
 .texto-Contactanos{
     display: inline-block;
