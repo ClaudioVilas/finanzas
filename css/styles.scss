@@ -51,6 +51,17 @@ body{
 }
 
 
+.contenedor{
+    display: block;
+    position: absolute;
+    background-color: rgb(31, 33, 54);
+    width: 75%;
+    height: 70%;
+    opacity: 80%;
+    margin-top: 8%;
+    margin-left: 15%;
+}
+
 @keyframes move2 {
     0%{transform: translate(-40%, 0);}
     50%{transform: translate(40%, 0);}   
@@ -130,13 +141,25 @@ body{
 }
 
 
-.texto-contactanos{
-    display: inline-block;
-    text-align: center;
-    font-style: italic;
-    font-size: $font-size;
-    margin-right: 350px;
-    margin-left: 300px; 
+
+.datospersonales{
+    border-style: dashed;
+    border-color: aliceblue;
+    border-width: 2px;
+    position: absolute;
+    display: flex;
+    font-size: x-large;
+    margin-top: 5%;
+    margin-left: 35%;
+    line-height: 35px;
+    color: $font-color; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding: 1%;
+    form{
+        margin-bottom: 3%;
+        margin-top: 3%;
+        }
 }
 
 
@@ -152,54 +175,19 @@ body{
 }
 
 
-.datospersonales{
-    font-size: x-large;
-    position: absolute;
-    margin-left: 600px;
-    margin-top: 500px;
-    display: inline-flex;
-    flex-direction: column;
-    line-height: 35px;
-}
-
-
-.botones{
-    display: flex;
-    justify-items: center;
-}
-
-
-.video{
-    display: inline-block;
-    position: absolute;
-    margin-left: 700px;
-    margin-top: 500px;
-    border-width: 2px;
-    border-style: groove;
-    padding: 10px 10px 10px 10px;
-    border-color: bisque;
-}
-
-
-.botones{
-    justify-content: space-around;
-    margin-top: 15px;
-}
-
-
-#floatingTextarea2{
+/**#floatingTextarea2{
     width: 800px;
     height: 100px;
     font-size: large;
     text-align: center;
     margin-top: 10px;
-}
+}**/
 
 
 .textoinicio{
     font-family: "Tiro";
     color: rgb(255, 255, 255);
-    margin-top: 3%;
+    margin-top: 10%;
     font-size: 200%;
     text-align: center;
     position: relative;
@@ -219,16 +207,16 @@ h1{
 }
     
 
-.landingtext{
+/**.landingtext{
     text-align: center;
     position: absolute;
     margin-top: 1%;
     width: 99%;
     margin-left: 0.5%;
-}
+}**/
 
 
-.landingtextindex{
+/**.landingtextindex{
     text-align: center;
     position: absolute;
     margin-top: 3.5%;
@@ -236,7 +224,7 @@ h1{
     width: 90%;
     margin-left: 5%;
     height: 800px;
-}
+}**/
 
 
 .ajustetexto{
@@ -269,7 +257,7 @@ button{
  }
 
 
- .datoslandin{
+.datoslandin{
     font-family: "Tiro";
     color: rgb(255, 255, 255);
     padding-top: 1%;
@@ -369,44 +357,23 @@ ul {
         display: none;
 }      
 }        
-   
-    
-.texto-Contactanos{
-    display: inline-block;
-    text-align: center;
-    font-style: italic;
-    font-size: 26px;
-    margin-right: 350px;
-    margin-left: 300px;
-}
+            
         
-        
-.datospersonales{
-    display: inline-flex;
-    position: absolute;
-    font-size: small;
-    margin-left: 20px;
-    margin-top: 480px;
-    flex-direction: column;
-    line-height: 35px;
-}
-        
-        
-.botones{
+/**.botones{
     display: flex;
     justify-items: center;
     justify-content: space-around;
     margin-top: 15px;
-}
+}**/
         
         
 .video{
-    width: 250px;
-    height: 175px;
     display: inline-block;
     position: absolute;
-    margin-left: 10px;
-    margin-top: 100px;
+    width: 50%;
+    height: 55%;
+    margin-left: 28%;
+    margin-top: 7%;
     border-width: 2px;
     border-style: groove;
     padding: 10px 10px 10px 10px;
