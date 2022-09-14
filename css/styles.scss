@@ -1,5 +1,5 @@
 @font-face{
-    font-family: "Tiro";
+    font-family: "tiro";
     src: url("../fonts/ubuntu-medium.ttf");
     color: rgb(255, 255, 255);
 }
@@ -11,7 +11,7 @@
 body{
     background-image: url(../imagenes/varias/fondo3.jpg);
     background-size: cover;
-    font-family: "Tiro";
+    font-family: "tiro";
     color: rgb(255, 255, 255);
 }
 
@@ -29,7 +29,7 @@ body{
 
 /**encabezado que figura en todas las paginas Claudio vilas finanzas**/
 .encabezado{
-    font-family: "Tiro";
+    font-family: "tiro";
     color: rgb(230, 224, 224);
     margin-top: 1%;
     display: flex;
@@ -207,7 +207,7 @@ body{
 
 /**texto de la pagina landing**/
 h1, .teasesoramos{
-    font-family: "Tiro";
+    font-family: "tiro";
     color: rgb(255, 255, 255);
     padding-top: 1%;
     font-size: 275%;
@@ -232,7 +232,7 @@ h1, .teasesoramos{
     text-align: center;
     margin-top: 2%;
     position: relative;
-    font-family: "Tiro";
+    font-family: "tiro";
     color: rgb(255, 255, 255);
 
 button{
@@ -258,7 +258,7 @@ button{
 
  /**nombre apellido pagina landing**/
 .datoslandin{
-    font-family: "Tiro";
+    font-family: "tiro";
     color: rgb(255, 255, 255);
     padding-top: 1%;
     font-size: x-large;
@@ -318,7 +318,7 @@ button{
     text-align: center;
     margin-top: 2%;
     position: relative;
-    font-family: "Tiro";
+    font-family: "tiro";
     color: rgb(255, 255, 255);
 
 button{
