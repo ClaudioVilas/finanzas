@@ -13,18 +13,18 @@ body {
 .barra {
   background-color: black;
   display: flex;
-  opacity: 60%;
+  opacity: 70%;
   font-size: larger;
 }
-.barra .barra2 .barra3 {
-  margin-right: 5%;
+.barra .barra2, .barra .barra3 {
+  margin-right: 1%;
   margin-left: 1%;
 }
 
 /**encabezado que figura en todas las paginas Claudio vilas finanzas**/
 .encabezado {
   font-family: "tiro";
-  color: rgb(230, 224, 224);
+  color: rgb(255, 255, 255);
   margin-top: 1%;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@ body {
   position: absolute;
   background-color: rgb(31, 33, 54);
   width: 45%;
-  height: 67%;
+  height: 70%;
   opacity: 80%;
   margin-top: 4%;
   margin-left: 30%;
@@ -93,7 +93,7 @@ body {
     transform: translate(0%, 0);
   }
 }
-.textoindex, .textoobjetivos, .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot {
+.textos {
   position: absolute;
   display: block;
   font-style: italic;
@@ -101,6 +101,7 @@ body {
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
   letter-spacing: 0.1cm;
+  margin-left: 3%;
 }
 
 .textoindex, .textoobjetivos, .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot {
@@ -338,45 +339,4 @@ h1, .teasesoramos {
   .logos .facebook, .logos .mail, .logos .telegram, .logos .wechat, .logos .whatsapp {
     padding-right: 5%;
   }
-}
-/**  
-.lista a{
-        color: aliceblue;
-}
-
-
-.lista {
-        position: absolute;
-        display: flex;
-        font-size: 10px;
-        display: grid;
-        justify-content: left;
-        margin-top: 5%;
-        grid-template-columns: 75px 75px 75px 75px ;
-        grid-template-rows: 20px 20px;
-        margin-left: 5px;
-}
-
-
-}
-
-
-.lista a{
-    color: aliceblue;
-    font-size: ($font-size / 4.5);
-    display: block;
-}
-
-
-ul {
-    list-style-type: none;
-
-        ul {
-            display: block;
-            position: absolute;
-            display: none;
-
-}
-}   
-
- **//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
