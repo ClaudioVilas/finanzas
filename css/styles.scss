@@ -358,7 +358,7 @@ button{
 .footer{
     position: absolute;
     display: flex;
-    margin-top: 2%;
+    margin-top: 165%;
     margin-left: 45%;
     font-style: oblique;
     font-size: 9px;
@@ -369,11 +369,63 @@ button{
 
 /**logos de redes sociales mail etc**/
 .logos{
+    position: absolute;
+    display: flex;
     flex-direction: row;
     margin-left: 10%;
-    margin-top: 105%;
+    margin-top: 145%;
         .facebook, .mail, .telegram, .wechat, .whatsapp{
             padding-right: 5%;
-        }
     }
 }
+
+.datospersonales{
+    font-size: small;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 35px;
+    color: $font-color; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding: 1%;
+        form{
+            margin-bottom: 3%;
+            margin-top: 3%;
+            }
+}
+
+
+.video{
+    margin-left: 0%;
+    width: 100%;
+}
+
+
+.torovsbear{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-left: 15%;
+    margin-top: 115%;
+}
+
+
+.torovsbear1{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: 95%;
+}
+
+
+.torovsbear2{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-left: 55%;
+    margin-top: 75%;
+}
+}
+/** fin de media **/
