@@ -1,30 +1,30 @@
 @font-face {
-  font-family: "Tiro";
+  font-family: "tiro";
   src: url("../fonts/ubuntu-medium.ttf");
   color: rgb(255, 255, 255);
 }
 body {
   background-image: url(../imagenes/varias/fondo3.jpg);
   background-size: cover;
-  font-family: "Tiro";
+  font-family: "tiro";
   color: rgb(255, 255, 255);
 }
 
 .barra {
   background-color: black;
   display: flex;
-  opacity: 60%;
+  opacity: 70%;
   font-size: larger;
 }
-.barra .barra2 .barra3 {
-  margin-right: 5%;
+.barra .barra2, .barra .barra3 {
+  margin-right: 1%;
   margin-left: 1%;
 }
 
 /**encabezado que figura en todas las paginas Claudio vilas finanzas**/
 .encabezado {
-  font-family: "Tiro";
-  color: rgb(230, 224, 224);
+  font-family: "tiro";
+  color: rgb(255, 255, 255);
   margin-top: 1%;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@ body {
   position: absolute;
   background-color: rgb(31, 33, 54);
   width: 45%;
-  height: 67%;
+  height: 70%;
   opacity: 80%;
   margin-top: 4%;
   margin-left: 30%;
@@ -93,7 +93,7 @@ body {
     transform: translate(0%, 0);
   }
 }
-.textoindex, .textoobjetivos, .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot {
+.textos {
   position: absolute;
   display: block;
   font-style: italic;
@@ -101,6 +101,7 @@ body {
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
   letter-spacing: 0.1cm;
+  margin-left: 3%;
 }
 
 .textoindex, .textoobjetivos, .textoasesorias, .textobrokers, .textoinversiones, .textoinstrumentos, .textorobot {
@@ -203,7 +204,7 @@ body {
 
 /**texto de la pagina landing**/
 h1, .teasesoramos {
-  font-family: "Tiro";
+  font-family: "tiro";
   color: rgb(255, 255, 255);
   padding-top: 1%;
   font-size: 275%;
@@ -227,7 +228,7 @@ h1, .teasesoramos {
   text-align: center;
   margin-top: 2%;
   position: relative;
-  font-family: "Tiro";
+  font-family: "tiro";
   color: rgb(255, 255, 255);
 }
 .botoneslanding button {
@@ -249,7 +250,7 @@ h1, .teasesoramos {
 
 /**nombre apellido pagina landing**/
 .datoslandin {
-  font-family: "Tiro";
+  font-family: "tiro";
   color: rgb(255, 255, 255);
   padding-top: 1%;
   font-size: x-large;
@@ -296,7 +297,7 @@ h1, .teasesoramos {
     text-align: center;
     margin-top: 2%;
     position: relative;
-    font-family: "Tiro";
+    font-family: "tiro";
     color: rgb(255, 255, 255);
   }
   .botoneslanding button {
@@ -322,7 +323,7 @@ h1, .teasesoramos {
   .footer {
     position: absolute;
     display: flex;
-    margin-top: 2%;
+    margin-top: 165%;
     margin-left: 45%;
     font-style: oblique;
     font-size: 9px;
@@ -331,52 +332,54 @@ h1, .teasesoramos {
   }
   /**logos de redes sociales mail etc**/
   .logos {
+    position: absolute;
+    display: flex;
     flex-direction: row;
     margin-left: 10%;
-    margin-top: 105%;
+    margin-top: 145%;
   }
   .logos .facebook, .logos .mail, .logos .telegram, .logos .wechat, .logos .whatsapp {
     padding-right: 5%;
   }
+  .datospersonales {
+    font-size: small;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding: 1%;
+  }
+  .datospersonales form {
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+  .video {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .torovsbear {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-left: 15%;
+    margin-top: 115%;
+  }
+  .torovsbear1 {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: 95%;
+  }
+  .torovsbear2 {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-left: 55%;
+    margin-top: 75%;
+  }
 }
-/**  
-.lista a{
-        color: aliceblue;
-}
-
-
-.lista {
-        position: absolute;
-        display: flex;
-        font-size: 10px;
-        display: grid;
-        justify-content: left;
-        margin-top: 5%;
-        grid-template-columns: 75px 75px 75px 75px ;
-        grid-template-rows: 20px 20px;
-        margin-left: 5px;
-}
-
-
-}
-
-
-.lista a{
-    color: aliceblue;
-    font-size: ($font-size / 4.5);
-    display: block;
-}
-
-
-ul {
-    list-style-type: none;
-
-        ul {
-            display: block;
-            position: absolute;
-            display: none;
-
-}
-}   
-
- **//*# sourceMappingURL=styles.css.map */
+/** fin de media **//*# sourceMappingURL=styles.css.map */
