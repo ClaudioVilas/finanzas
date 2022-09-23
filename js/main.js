@@ -108,11 +108,11 @@ while (tipoDeInversion != "Arriesgada" && tipoDeInversion != "moderada" && tipoD
     case (capital == 0): 
         alert (`Que lastima ${nombre}, no podremos ayudarte!!!`);
 
-    for (let i = 0; i < 4; i++){
+    for (let i = 0; i < 5; i++){
         prompt ("Deberas ingresar la palabra 'salir' 5 veces por no saber ahorrar")
     
     }
-break;
+    break;
 
     case (capital >=1) && (capital <= 10000):
          alert (`Excelente ${nombre}, te acosejamos lo siguiente!!!`);
@@ -160,7 +160,6 @@ break;
 
 else{
     alert(`Completaste con ${pregunta1} no podemos ayudarte. Gracias.`);
-    // como castigo tendras que ingresar la palabra salir 5 veces hacerlo con formula for
 }
 
 
