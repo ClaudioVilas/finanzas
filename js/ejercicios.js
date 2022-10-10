@@ -211,13 +211,13 @@
   
 // console.log(nbPetals.findIndex);
 
-function simpleMultiplication(number) {
-    if (number % 2 == 0){
-      let resutaldo = number * 8;
-      return resutaldo;
-    }
-      else {
-        number * 9;
-        }
-    }
-    
+// function sameCase(a, b){
+
+//   if (a >= `a` && b <= `z`){
+//     return 1;
+//   }
+
+
+//   console.log(a,a);
+  
+// }
