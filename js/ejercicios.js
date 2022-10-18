@@ -211,13 +211,23 @@
   
 // console.log(nbPetals.findIndex);
 
-// function sameCase(a, b){
-
-//   if (a >= `a` && b <= `z`){
-//     return 1;
-//   }
 
 
-//   console.log(a,a);
-  
-// }
+
+// var character = 'A';
+// if (character == character.toUpperCase())
+//  { alert ('upper case true'); } 
+//  if (character == character.toLowerCase()){ alert ('lower case true'); }
+
+
+
+   let arrayOfSheep = [true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true,
+false, false, true, true];
+
+
+
+for (let i = true; i > arrayOfSheep.length; i++ ){
+    if (i = true){
+        return(i++);
+    }
+}
