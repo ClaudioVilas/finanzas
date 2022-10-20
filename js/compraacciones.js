@@ -1,10 +1,11 @@
 class Acciones {
-    constructor(nombre, cantidad, sector, valor) {
+    constructor (nombre, cantidad, sector, valor){
+
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.sector = sector;
         this.valor = valor;
-    }
+}
 }
 
 const listaDeCompra = [];
