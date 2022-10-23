@@ -1,0 +1,36 @@
+// funciona para que cuando se presiona el boton enviar de la pagina contactos salgaun cartel de tus datos han sido enviados
+
+let boton = document.querySelector("a.btn.btn-primary");
+
+const alerta =() =>{
+        
+        Swal.fire("Tus datos se enviaron con exito!!")
+}
+ 
+ boton.addEventListener("click", alerta); 
+
+
+//  Codigo para guardado de datos en la sesion
+
+function mostrarValores(){
+let nombreUsuario = document.getElementsByClassName("nombreUsuario").value;
+let edadUsuario = document.getElementsByClassName("edadUsuario").value;
+let mailUsuario = document.getElementsByClassName("mailUsuario").value;
+let sinconocimientos = document.getElementsByClassName("")
+let conconocimientos = document.getElementsByClassName("")
+let conocimiento0a3 = document.getElementsByClassName("conocimiento0a3").value;
+let conocimiento3a5 = document.getElementsByClassName("conocimiento3a5").value;
+let conocimiento5amas = document.getElementsByClassName("conocimiento5amas").value;
+}
+
+const datosUduario = () =>{
+        e.preventDefault();
+        localStorage.setItem("nombreUsuario", nombreUsuario);
+        localStorage.setItem("edadUsuario", edadUsuario);
+        localStorage.setItem("mailUsuario", mailUsuario);
+        localStorage.setItem("conocimiento0a3", conocimiento0a3);
+        localStorage.setItem("conocimiento3a5", conocimiento3a5);
+        localStorage.setItem("conocimiento5amas", conocimiento5amas);
+}
+
+boton.addEventListener("click", datosUduario); 
