@@ -1,23 +1,24 @@
 class Acciones {
-    constructor (nombre, cantidad, sector, valor) {
+    constructor (nombre, cantidad, sector, valor){
+
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.sector = sector;
         this.valor = valor;
-    }
+}
 }
 
-const ListaDeCompra = [];
+const listaDeCompra = [];
 
-const GuardarCompraDeAcciones = () =>{
-let nombre = document.getElementsByClassName("nombreDeLaAccion").value;
-let cantidad = document.getElementsByClassName("cantidadAComprar").value;
-let sector = document.getElementsByClassName("sector").value;
-let valor = document.getElementsByClassName("ValorDeCompra").value;
+const GuardarAcciones = () => {
+    let nombre = document.getElementsByClassName("stock").value;
+    let cantidad = parseFloat(document.getElementsByClassName("cantidad")).value;
+    let sector = document.getElementsByClassName("sector").value;
+    let valor = parseFloat(document.getElementsByClassName("valor")).value;
 
 
 let NuevaAccion = new Acciones (nombre, cantidad, sector, valor);
-ListaDeCompra.push(NuevaAccion);
+listaDeCompra.push(NuevaAccion);
 }
 
  
