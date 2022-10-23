@@ -1,3 +1,5 @@
+
+
 class Acciones {
     constructor (nombre, cantidad, sector, valor){
 
@@ -20,5 +22,13 @@ const GuardarAcciones = () => {
 let NuevaAccion = new Acciones (nombre, cantidad, sector, valor);
 listaDeCompra.push(NuevaAccion);
 }
+
+
+// LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
+let nombre = localStorage.getItem("nombreUsuario");
+
+document.getElementsByClassName("h2.animate__animated animate__flipInX").innetHTML = `Bienbenido ${nombre}`;
+
+
 
  

@@ -221,13 +221,6 @@
 
 
 
-   let arrayOfSheep = [true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true,
-false, false, true, true];
+let nombr = prompt ("cual es tu nombre");
 
-
-
-for (let i = true; i > arrayOfSheep.length; i++ ){
-    if (i = true){
-        return(i++);
-    }
-}
+alert (`tu nombre ${nombr}`);

@@ -158,33 +158,28 @@ body {
 }
 
 /**pagina contactos lugar donde se completan los datos de los contactos**/
-.datospersonales, .CompraDeAcciones {
+.datospersonales {
   border-style: dashed;
   border-color: aliceblue;
   border-width: 2px;
   position: absolute;
   display: flex;
   font-size: x-large;
-  margin-top: 5%;
-  margin-left: 35%;
+  margin-top: 6%;
+  margin-left: 31%;
   line-height: 35px;
   color: rgb(255, 255, 255);
   padding-top: 1%;
   padding-bottom: 1%;
   padding: 1%;
 }
-.datospersonales, .CompraDeAcciones form {
+.datospersonales form {
   margin-bottom: 3%;
   margin-top: 3%;
 }
 
-.CompraDeAcciones{
-  width: 500px;
-  
-}
-
-.torovsbear, .torovsbear1, .torovsbear2{
-  display: none;
+.btn-primary{
+  margin-left: 45%;
 }
 
 /**logos de los brokers**/
@@ -286,6 +281,11 @@ h1, .teasesoramos {
   border-style: groove;
   padding: 10px 10px 10px 10px;
   border-color: bisque;
+}
+
+.conocimiento3a5, .conocimiento5amas{
+  margin-left: 2%;
+  margin-top: 3%;
 }
 
 /* Medidas para Iphone X 375 PX */
