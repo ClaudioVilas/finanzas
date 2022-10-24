@@ -221,7 +221,7 @@
 
 
 
-let mail = document.getElementById("mailUsuario").value;
+let nombre = document.getElementById("nombre").value;
 let enviar = document.getElementById("enviar");
 
 const alerta = () =>{
@@ -230,4 +230,4 @@ const alerta = () =>{
 
 enviar.addEventListener("click", alerta)
 
-console.log(mail);
+console.log(nombre);
