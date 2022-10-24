@@ -181,6 +181,15 @@ body{
         }
 }
 
+#nombreUsuario, #edadUsuario, #mailUsuario, #conocimientos, #experiencia {
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
+#experiencia{
+    margin-bottom: 2%;
+}
+
 
 /**logos de los brokers**/
 .fotosbrokers{
@@ -322,6 +331,7 @@ button{
   } 
 
 
+
 /* Medidas para Iphone X 375 PX */
 
 
@@ -455,3 +465,5 @@ button{
 }
 }
 /** fin de media **/
+
+
