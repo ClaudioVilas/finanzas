@@ -165,8 +165,8 @@ body {
   position: absolute;
   display: flex;
   font-size: x-large;
-  margin-top: 6%;
-  margin-left: 31%;
+  margin-top: 5%;
+  margin-left: 35%;
   line-height: 35px;
   color: rgb(255, 255, 255);
   padding-top: 1%;
@@ -176,10 +176,6 @@ body {
 .datospersonales form {
   margin-bottom: 3%;
   margin-top: 3%;
-}
-
-.btn-primary{
-  margin-left: 45%;
 }
 
 /**logos de los brokers**/
@@ -283,9 +279,29 @@ h1, .teasesoramos {
   border-color: bisque;
 }
 
-.conocimiento3a5, .conocimiento5amas{
-  margin-left: 2%;
-  margin-top: 3%;
+.merlibre {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.tesla {
+  margin-left: 30%;
+  margin-top: -25%;
+}
+
+.google {
+  margin-left: 35%;
+  margin-top: -32%;
+}
+
+.micro {
+  margin-left: 70%;
+  margin-top: -40%;
+}
+
+.apple {
+  margin-left: 35%;
+  margin-top: 10%;
 }
 
 /* Medidas para Iphone X 375 PX */
