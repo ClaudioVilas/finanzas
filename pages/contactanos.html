@@ -72,50 +72,50 @@
 <fieldset>
     <legend>Datos Personales</legend>
 
-<form>
+<div>
   <label for="nombre_apellido">Nombre y Apellido</label>
-  <input class="nombreUsuario" type="text" name="nombre_apellido">
-</form>
+  <input id="nombreUsuario" type="text" name="nombre_apellido">
+</div>
 
-<form>
+<div>
   <label for="Edad">Edad</label>
-  <input type="number" name="Edad" class="edadUsuario">
-</form>
+  <input type="number" name="Edad" id="edadUsuario">
+</div>
 
-<form>
+<div>
   <label for="mail">Mail</label>
-  <input type="mail" name="Mail" class="mailUsuario">
-</form>
+  <input type="mail" name="Mail" id="mailUsuario">
+</div>
 
-<form>
-    <label  for="conocimientos">Conocimientos</label>
+<div>
+    <label  id="conocimientos" for="conocimientos">Conocimientos</label>
     <select name="conocimientos">
-      <option value="sin conocimientos" class="sinconocimientos">Sin Conocimientos</option>
-      <option value="con conocimientos" class="conconocimientos">Con Conocimientos</option>
+      <option value="sin conocimientos" id="sinconocimientos">Sin Conocimientos</option>
+      <option value="con conocimientos" id="conconocimientos">Con Conocimientos</option>
     </select>
-</form>
+</div>
 
-<form>
+<div id="experiencia">
     <Label for="Anosdeexperiencia">Años de Expriencia</Label><br>
-        <input type="radio" id="0 a 3" class="conocimiento0a3"></input>
+        <input type="radio" id="0 a 3" id="conocimiento0a3"></input>
         <label for="0 a 3">0 a 3</label>
-        <input type="radio" id="3 a 5" class="conocimiento3a5"></input>
+        <input type="radio" id="3 a 5" id="conocimiento3a5"></input>
         <label for="3 a 5">3 a 5</label>
         <input type="radio" id="5 o mas" class="conocimiento5amas"></input>
         <label for="5 o mas">5 o mas</label>
-</form>
+</div>
 
 
-<div class="mb-3">
+<div id="comentarios" class="mb-3">
     <label for="exampleFormControlTextarea1" class="form-label">Dejanos Tus comentacios</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 
 <!-- a es un boton de bootstrap -->
-<a class="btn btn-primary" href="./seleccionacciones.html" role="button">Enviar</a>
+<button><a id="boton" href="./seleccionacciones.html" role="button">Enviar</a></button>
 
 </fieldset>
-</form>  
+</form> 
 
 <!--logos de redes sociales mail etc-->
 <div class="logos">
@@ -131,7 +131,7 @@
     Claudio Vilas copyright@2022 todos los derechos reservados Matricula DBST
 </footer>
 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>;
 <script src="../js/contactanos.js"></script>
 
 </body>

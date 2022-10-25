@@ -1,14 +1,16 @@
 // funciona para que cuando se presiona el boton enviar de la pagina contactos salgaun cartel de tus datos han sido enviados
 
-let boton = document.querySelector("a.btn.btn-primary");
-let nombreUsuario = document.getElementsByClassName("nombreUsuario").value;
-let edadUsuario = document.getElementsByClassName("edadUsuario").value;
-let mailUsuario = document.getElementsByClassName("mailUsuario").value;
-let sinconocimientos = document.getElementsByClassName("")
-let conconocimientos = document.getElementsByClassName("")
-let conocimiento0a3 = document.getElementsByClassName("conocimiento0a3").value;
-let conocimiento3a5 = document.getElementsByClassName("conocimiento3a5").value;
-let conocimiento5amas = document.getElementsByClassName("conocimiento5amas").value;
+let boton = document.getElementById("boton");
+let nombreUsuario = document.getElementById("nombreUsuario").value;
+let edadUsuario = document.getElementById("edadUsuario").value;
+let mailUsuario = document.getElementById("mailUsuario").value;
+// let sinconocimientos = document.getElementById("")
+// let conconocimientos = document.getElementById("")
+let conocimiento0a3 = document.getElementById("conocimiento0a3").value;
+let conocimiento3a5 = document.getElementById("conocimiento3a5").value;
+let conocimiento5amas = document.getElementById("conocimiento5amas").value;
+
+
 
 const alerta =() =>{
         

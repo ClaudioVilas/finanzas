@@ -178,6 +178,15 @@ body {
   margin-top: 3%;
 }
 
+#nombreUsuario, #edadUsuario, #mailUsuario, #conocimientos, #experiencia {
+  padding-top: 2%;
+  margin-top: 2%;
+}
+
+#experiencia {
+  margin-bottom: 2%;
+}
+
 /**logos de los brokers**/
 .fotosbrokers {
   display: flex;

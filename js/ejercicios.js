@@ -221,6 +221,13 @@
 
 
 
-let nombr = prompt ("cual es tu nombre");
+let nombre = document.getElementById("nombre").value;
+let enviar = document.getElementById("enviar");
 
-alert (`tu nombre ${nombr}`);
+const alerta = () =>{
+    alert ("esto sin sweet alert funciona de maravilla");
+}
+
+enviar.addEventListener("click", alerta)
+
+console.log(nombre);
