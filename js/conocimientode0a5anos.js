@@ -6,6 +6,8 @@ class Producto {
     // this.descricpion = descricpion;
 }}
 
+let boton = document.getElementById("botonEnviar");
+
 const listaProductosAgregados = [];
 
 const agregarProducto = () => {
@@ -18,16 +20,19 @@ const agregarProducto = () => {
 let prodcutoNuevo = new Producto (nombre);
 
 listaProductosAgregados.push(prodcutoNuevo);
+
+console.log(agregarProducto);
+
 }
 
+boton.addEventListener("click", agregarProducto);
+
+
+// function enviarDatos ()  {
+//     alert ("Tus datos se enviaron con exito!!");
+//     }
 
 
 
 
-let boton = document.getElementById("botonEnviar");
 
-function enviarDatos ()  {
-alert ("Tus datos se enviaron con exito!!");
-}
-
-boton.addEventListener("click", enviarDatos);
