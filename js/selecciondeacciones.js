@@ -25,9 +25,11 @@ listaDeCompra.push(NuevaAccion);
 
 
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
-let nombre = localStorage.getItem("nombreUsuario");
+let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
+banner2.innerText = `Bienvenido ${UsuarioEncabezado}`;
 
-document.getElementsByClassName("h2.animate__animated animate__flipInX").innetHTML = `Bienbenido ${nombre}`;
+
+
 
 
 

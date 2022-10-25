@@ -178,13 +178,16 @@ body {
   margin-top: 3%;
 }
 
-#nombreUsuario, #edadUsuario, #mailUsuario, #conocimientos, #experiencia {
-  padding-top: 2%;
-  margin-top: 2%;
+#nombreUsuario, #edadUsuario, #mailUsuario, #expe {
+  margin-top: 3%;
 }
 
-#experiencia {
-  margin-bottom: 2%;
+#mailUsuario {
+  margin-bottom: 3%;
+}
+
+#comentarios {
+  margin-top: 3%;
 }
 
 /**logos de los brokers**/
@@ -311,6 +314,23 @@ h1, .teasesoramos {
 .apple {
   margin-left: 35%;
   margin-top: 10%;
+}
+
+.CompraDeAcciones {
+  width: 500px;
+  border-style: dashed;
+  border-color: aliceblue;
+  border-width: 2px;
+  position: absolute;
+  display: flex;
+  font-size: x-large;
+  margin-top: 5%;
+  margin-left: 35%;
+  line-height: 35px;
+  color: rgb(255, 255, 255);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding: 1%;
 }
 
 /* Medidas para Iphone X 375 PX */
