@@ -308,7 +308,6 @@ button{
 }  
    
 .merlibre{
-
     margin-left: 5%;
     margin-top: 5%;
   }
@@ -332,9 +331,25 @@ button{
   .apple{
     margin-left: 35%;
     margin-top: 10%;
-
   } 
 
+// pagina de envio con conocimiento de 0 a 5 anos
+  .CompraDeAcciones{
+    width: 500px;
+    border-style: dashed;
+    border-color: aliceblue;
+    border-width: 2px;
+    position: absolute;
+    display: flex;
+    font-size: x-large;
+    margin-top: 5%;
+    margin-left: 35%;
+    line-height: 35px;
+    color: $font-color; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding: 1%;
+  }
 
 
 /* Medidas para Iphone X 375 PX */

@@ -148,3 +148,8 @@
 // ver de usar un funcion para pedir las propiedades de la persona para ingresar al sitio y registrarse
 
 
+
+
+
+
+

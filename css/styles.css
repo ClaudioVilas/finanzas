@@ -316,6 +316,23 @@ h1, .teasesoramos {
   margin-top: 10%;
 }
 
+.CompraDeAcciones {
+  width: 500px;
+  border-style: dashed;
+  border-color: aliceblue;
+  border-width: 2px;
+  position: absolute;
+  display: flex;
+  font-size: x-large;
+  margin-top: 5%;
+  margin-left: 35%;
+  line-height: 35px;
+  color: rgb(255, 255, 255);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding: 1%;
+}
+
 /* Medidas para Iphone X 375 PX */
 @media screen and (max-width: 375px), (max-width: 414px) {
   .encabezado, .nombre {
