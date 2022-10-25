@@ -221,13 +221,11 @@
 
 
 
-let nombre = document.getElementById("nombre").value;
-let enviar = document.getElementById("enviar");
+let nombreUsuario = document.getElementById("nombre");
+let enviar = document.getElementById("btn-reserve");
 
-const alerta = () =>{
-    alert ("esto sin sweet alert funciona de maravilla");
-}
+enviar.addEventListener("click", function(){
+    console.log(nombreUsuario.value);
+})
 
-enviar.addEventListener("click", alerta)
 
-console.log(nombre);
