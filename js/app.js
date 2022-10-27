@@ -19,16 +19,18 @@ listaProductos.forEach((producto) => {
     
 const boton = document.getElementById("botonagregar");
 
+const agregarAlCarrito = () => {
+    carrito.push(producto.nombre);
+}
+
 boton.addEventListener ("click", agregarAlCarrito);
-
-
 
 })
 
 
-const agregarAlCarrito = () => {
-    carrito.push(pro.nombre);
-}
+
+
+
 
 // const agregarAlCarrito = (prodId) => {
 //     const item = stockProducto.find ((prod) => producto.nombre === prodId);

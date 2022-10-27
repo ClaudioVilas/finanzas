@@ -4,7 +4,7 @@ let boton = document.getElementById("boton");
 
 
 boton.addEventListener ("click", function() {
-        Swal.fire ("Tus datos se enviaron con exito!!");
+       alert ("Tus datos se enviaron con exito!!");
                 
         localStorage.setItem("nombreUsuario", nombreUsuario.value);
         localStorage.setItem("edadUsuario", edadUsuario.value);
