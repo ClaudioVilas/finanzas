@@ -16,14 +16,20 @@ listaProductos.forEach((producto) => {
     `
 
     contenedorProductos.appendChild(div);
+
+
     
 const boton = document.getElementById("botonagregar");
 
-const agregarAlCarrito = () => {
-    carrito.push(producto.nombre);
+const agregarAlCarrito = (prodId) => {
+    const item = stockProductos.find((producto) => producto.nombre === prodId)
+    carrito.push(item);
+    console.log(carrito);
 }
 
 boton.addEventListener ("click", agregarAlCarrito);
+
+console.log(agregarAlCarrito);
 
 })
 

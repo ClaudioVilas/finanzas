@@ -333,6 +333,13 @@ h1, .teasesoramos {
   padding: 1%;
 }
 
+.carritoimagen {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
 /* Medidas para Iphone X 375 PX */
 @media screen and (max-width: 375px), (max-width: 414px) {
   .encabezado, .nombre {
