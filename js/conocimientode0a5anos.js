@@ -1,38 +1,39 @@
 class Producto {
     constructor(nombre){
     this.nombre = nombre;
-    // this.tipo = tipo;
-    // this.valor = valor;
-    // this.descricpion = descricpion;
 }}
 
-let boton = document.getElementById("botonEnviar");
+let boton = document.querySelector("#botonEnviar");
 
 const listaProductosAgregados = [];
 
 const agregarProducto = () => {
     let nombre = document.getElementById("nombreAccion").value;
-    // let tipo = prompt("tipo");
-    // let valor = prompt("valor");
-    // let descricpion = prompt("descricpion");
 
-
-let prodcutoNuevo = new Producto (nombre);
+   let prodcutoNuevo = new Producto (nombre); 
 
 listaProductosAgregados.push(prodcutoNuevo);
 
-console.log(agregarProducto);
-
 }
+
+    console.log(agregarProducto);
+
+
 
 boton.addEventListener("click", agregarProducto);
 
+
+// LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
+let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
+banner2.innerText = `Bienvenido ${UsuarioEncabezado}`;
 
 // function enviarDatos ()  {
 //     alert ("Tus datos se enviaron con exito!!");
 //     }
 
 
+// let nombre = document.getElementById("nombreAccion");
 
 
+// console.log(nombre.value);
 

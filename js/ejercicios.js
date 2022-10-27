@@ -221,11 +221,11 @@
 
 
 
-let nombreUsuario = document.getElementById("nombre");
-let enviar = document.getElementById("btn-reserve");
+// let nombreUsuario = document.getElementById("nombre");
+// let enviar = document.getElementById("btn-reserve");
 
-enviar.addEventListener("click", function(){
-    console.log(nombreUsuario.value);
-})
+// enviar.addEventListener("click", function(){
+//     console.log(nombreUsuario.value);
+// })
 
 

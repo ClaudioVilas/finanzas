@@ -436,4 +436,29 @@ h1, .teasesoramos {
     margin-top: 75%;
   }
 }
-/** fin de media **//*# sourceMappingURL=styles.css.map */
+/** fin de media **/
+.producto {
+  display: inline-block;
+  direction: row;
+  width: 250px;
+  height: 350px;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  justify-content: center;
+  justify-items: center;
+  border-style: dashed;
+  border-color: aliceblue;
+  border-width: 2px;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-family: "tiro";
+  color: rgb(255, 255, 255);
+}
+
+#botonagregar {
+  justify-items: center;
+}
+#botonagregar:hover {
+  background-color: rgb(21, 183, 35);
+  transition: 1s;
+}/*# sourceMappingURL=styles.css.map */

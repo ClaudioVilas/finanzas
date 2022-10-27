@@ -488,4 +488,28 @@ button{
 
 
 
+.producto{
+    display: inline-block;
+    direction: row;
+    width: 250px;
+    height: 350px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+    justify-items: center;
+    border-style: dashed;
+    border-color: aliceblue;
+    border-width: 2px;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-family: "tiro";
+    color: $font-color;
 
+}
+
+#botonagregar{
+justify-items: center;
+&:hover{
+    background-color: rgb(21, 183, 35);
+    transition: 1s;
+}}
