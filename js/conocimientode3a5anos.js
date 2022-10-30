@@ -15,20 +15,27 @@ listaProductos.forEach((producto) => {
     <h3>${producto.nombre}</h3>
     <p>${producto.desc}</p>
     <P>${producto.stock} Unidades</p>
-    <button class="botonagregar" role = "button">Precio: USD ${producto.valor}</button>
+    <button id ="idagregar" class="botonagregar" role = "button">Precio: USD ${producto.valor}</button>
+    <p id = ${producto.id} display = none></p>
     `
 
     contenedorProductos.appendChild(div);
 
+
+
 });
 
 
-botonesComprar.forEach(boton => {
+Array.from(botonesComprar).forEach((boton) => {
     boton.addEventListener("click", agregarCarrito)
 });
 
-function agregarCarrito (){
-    console.log("hola");
+
+function agregarCarrito (e){
+    boton = e.target;
+    let divpadre = boton.parentElement;
+    let productoNombre = divpadre.querySelector("id");
+    console.log(productoNombre);
 }
 
 
