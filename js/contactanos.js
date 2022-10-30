@@ -8,14 +8,14 @@ let boton = document.getElementById("boton");
 boton.addEventListener ("click", (e) =>{
 
         e.preventDefault();
-
-        Swal.fire('Any fool can use a computer');  
-              
+           
         localStorage.setItem("nombreUsuario", nombreUsuario.value);
 
         localStorage.setItem("edadUsuario", edadUsuario.value);
 
         localStorage.setItem("mailUsuario", mailUsuario.value);
+
+        Swal.fire('Tu datoa han diso enviados correctamente').then (() =>  {
         
         if (document.getElementById ("expe").value == 1){document.location.href ="../pages/sinconocimientos.html"}
 
@@ -24,6 +24,7 @@ boton.addEventListener ("click", (e) =>{
         else if (document.getElementById("expe").value == 3 ){ document.location.href ="../pages/conocimientode3a5anos.html"}
 
         else if (document.getElementById("expe").value == 4 ){ document.location.href ="../pages/conocimientodemasde5anos.html"}
+        })
      
 });
 

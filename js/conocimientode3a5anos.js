@@ -23,6 +23,14 @@ listaProductos.forEach((producto) => {
 });
 
 
+botonesComprar.forEach(boton => {
+    boton.addEventListener("click", agregarCarrito)
+});
+
+function agregarCarrito (){
+    console.log("hola");
+}
+
 
 
 // Funcion para que vaya a la pagina del carrito
