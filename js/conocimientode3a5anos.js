@@ -1,6 +1,7 @@
 const contenedorProductos = document.getElementById("contenedor.productos");
 const botonCarrito = document.getElementById("botoncarrito");
 const botonesComprar =  document.getElementsByClassName("botonagregar");
+const paginaCarrito = document.getElementById("carrito.productos");
 
 
 const carrito = [];
@@ -11,18 +12,14 @@ listaProductos.forEach((producto) => {
     const div = document.createElement('div');
     div.classList.add('producto');
     div.innerHTML =`
-    <img src = ${producto.img}>
+    <img class = "imagen" src = ${producto.img}>
     <h3>${producto.nombre}</h3>
     <p>${producto.desc}</p>
     <P>${producto.stock} Unidades</p>
     <button id ="idagregar" class="botonagregar" role = "button">Precio: USD ${producto.valor}</button>
-    <p id = ${producto.id} display = none></p>
     `
 
     contenedorProductos.appendChild(div);
-
-
-
 });
 
 
@@ -31,16 +28,51 @@ Array.from(botonesComprar).forEach((boton) => {
 });
 
 
+// calse contructora con las que agrega los datos al carrito
+class Producto{
+    constructor(productoNombre, productoImagen){
+        this.productoNombre = productoNombre;
+        this.productoImagen = productoImagen;
+    }
+}
+
+
+// Funcion con la cual se traen las propiedades de los productos, con la que genera el producto nuevo y con la que los envia al array del carrito
+
 function agregarCarrito (e){
     boton = e.target;
     let divpadre = boton.parentElement;
-    let productoNombre = divpadre.querySelector("id");
-    console.log(productoNombre);
+    let productoNombre = divpadre.querySelector("h3").textContent;
+    let productoImagen = divpadre.querySelector(".imagen").src;
+
+const agregarProducto = new Producto (productoNombre, productoImagen);
+
+carrito.push(agregarProducto);
+
+console.log(carrito);
+
+insertarEnCarrito();
+
+ }
+
+
+// Funcion para insertr los productos en la pagina Carrito de compras.
+function insertarEnCarrito () {
+    carrito.forEach((producto) => {
+    paginaCarrito.innerHTML +=`
+    <div clas = "producto">
+    <img class = "imagen" src = ${producto.img}>
+    <h3>${producto.nombre}</h3>
+    <p>${producto.desc}</p>
+    </div>
+    `
+
+});
 }
 
 
 
-// Funcion para que vaya a la pagina del carrito
+// Funcion para que el boton carrito vaya a la pagina del carrito
 botonCarrito.addEventListener ("click", () => {
 document.location.href = "../pages/carritodecompra.html"});
 
@@ -48,9 +80,3 @@ document.location.href = "../pages/carritodecompra.html"});
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
 let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
 banner2.innerText = `Bienvenido ${UsuarioEncabezado}`;
-
-
-// Agregar a cada boton la funcion para agregar al carrito
- 
-
-
