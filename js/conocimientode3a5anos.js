@@ -74,7 +74,7 @@ function insertarEnCarrito () {
 
 // Funcion para que el boton carrito vaya a la pagina del carrito
 botonCarrito.addEventListener ("click", () => {
-document.location.href = "../pages/carritodecompra.html"});
+window.location.href = "../pages/carritodecompra.html"});
 
 
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA

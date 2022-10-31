@@ -1,39 +1,21 @@
-class Producto {
-    constructor(nombre){
-    this.nombre = nombre;
-}}
-
-let boton = document.querySelector("#botonEnviar");
-
-const listaProductosAgregados = [];
-
-const agregarProducto = () => {
-    let nombre = document.getElementById("nombreAccion").value;
-
-   let prodcutoNuevo = new Producto (nombre); 
-
-listaProductosAgregados.push(prodcutoNuevo);
-
-}
-
-    console.log(agregarProducto);
+const acciones = document.getElementById("acciones");
 
 
+listaProductos.forEach((producto) => {
+    const select = document.createElement('select');
+    select.innerHTML =`
+        <select name="select">
+            <option> ${producto.nombre[1]}</option>
+        </select>
+          `
 
-boton.addEventListener("click", agregarProducto);
+    acciones.appendChild(select);
+});
+
+
 
 
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
 let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
 banner2.innerText = `Bienvenido ${UsuarioEncabezado}`;
-
-// function enviarDatos ()  {
-//     alert ("Tus datos se enviaron con exito!!");
-//     }
-
-
-// let nombre = document.getElementById("nombreAccion");
-
-
-// console.log(nombre.value);
 
