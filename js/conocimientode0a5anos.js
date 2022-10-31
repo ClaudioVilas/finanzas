@@ -2,14 +2,25 @@ const acciones = document.getElementById("acciones");
 
 
 listaProductos.forEach((producto) => {
-    const select = document.createElement('select');
-    select.innerHTML =`
-        <select name="select">
-            <option> ${producto.nombre[1]}</option>
-        </select>
-          `
-
+    const select = document.createElement('option');
+    select.innerHTML =
+        `
+        <option> ${producto.nombre}</option>
+        `
     acciones.appendChild(select);
+});
+
+
+
+const tipo = document.getElementById("tipo");
+
+listaProductos.forEach((producto) => {
+    const select = document.createElement('option');
+    select.innerHTML =
+        `
+        <option> ${producto.tipo}</option>
+        `
+    tipo.appendChild(select);
 });
 
 
