@@ -57,29 +57,28 @@ insertarEnCarrito();
  }
 
 
-//  lugar para agregar los productos en el modal
- const agregarPaginaCarrito = document.querySelector("#modal-body2 .modal-body")
+//  Lugar para agregar los productos en el modal
+ const agregarPaginaCarrito = document.querySelector("#modal-body2")
 
 
  // Funcion para insertr los productos en la pagina Carrito de compras.
- function insertarEnCarrito () {
+    function insertarEnCarrito () {
      carrito.forEach((producto) => {
-     agregarPaginaCarrito.innerHTML =`
+     agregarPaginaCarrito.innerHTML +=`
      <div clas = "producto">
-     <img class = "imagen" src = ${producto.img}>
+     <img src = ${producto.img}>
      <h3>${producto.nombre}</h3>
      <p>${producto.desc}</p>
      </div>
      `
-     agregarPaginaCarrito.appendChild(div);
  });
  
  }
 
 
 // Funcion para que el boton carrito vaya a la pagina del carrito
-botonCarrito.addEventListener ("click", () => {
-window.location.href = "../pages/carritodecompra.html"});
+// botonCarrito.addEventListener ("click", () => {
+// window.location.href = "../pages/carritodecompra.html"});
 
 
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
