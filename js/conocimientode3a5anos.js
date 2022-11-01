@@ -1,10 +1,11 @@
 const contenedorProductos = document.getElementById("contenedor.productos");
 const botonCarrito = document.getElementById("botoncarrito");
 const botonesComprar =  document.getElementsByClassName("botonagregar");
-const agregarPaginaCarrito = document.getElementById("carrito.productos")
+
 
 
 const carrito = [];
+
 
 // Funcion para crear el array en el HTML
 
@@ -51,7 +52,7 @@ carrito.push(agregarProducto);
 
 console.log(carrito);
 
-insertarEnCarrito();
+// insertarEnCarrito();
 
  }
 
@@ -59,19 +60,19 @@ insertarEnCarrito();
 
 
 // Funcion para insertr los productos en la pagina Carrito de compras.
-function insertarEnCarrito () {
-    carrito.forEach((producto) => {
-    const div = document.createElement('div');
-    div.innerHTML =`
-    <div clas = "producto">
-    <img class = "imagen" src = ${producto.img}>
-    <h3>${producto.nombre}</h3>
-    <p>${producto.desc}</p>
-    </div>
-    `
-    agregarPaginaCarrito.appendChild(div);
-});
-}
+// function insertarEnCarrito () {
+//     carrito.forEach((producto) => {
+//     const div = document.createElement('div');
+//     div.innerHTML =`
+//     <div clas = "producto">
+//     <img class = "imagen" src = ${producto.img}>
+//     <h3>${producto.nombre}</h3>
+//     <p>${producto.desc}</p>
+//     </div>
+//     `
+//     agregarPaginaCarrito.appendChild(div);
+// });
+// }
 
 
 
