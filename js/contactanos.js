@@ -15,6 +15,9 @@ boton.addEventListener ("click", (e) =>{
 
         localStorage.setItem("mailUsuario", mailUsuario.value);
 
+        if (localStorage.getItem (nombreUsuario) == nombreUsuario.value) {
+
+
         Swal.fire('Tu datoa han diso enviados correctamente').then (() =>  {
         
         if (document.getElementById ("expe").value == 1){document.location.href ="../pages/sinconocimientos.html"}
@@ -25,6 +28,12 @@ boton.addEventListener ("click", (e) =>{
 
         else if (document.getElementById("expe").value == 4 ){ document.location.href ="../pages/conocimientodemasde5anos.html"}
         })
+
+}
+
+else{
+        alert ("ya existe");
+}
      
 });
 
