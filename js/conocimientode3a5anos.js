@@ -52,28 +52,29 @@ carrito.push(agregarProducto);
 
 console.log(carrito);
 
-// insertarEnCarrito();
+insertarEnCarrito();
 
  }
 
 
+//  lugar para agregar los productos en el modal
+ const agregarPaginaCarrito = document.querySelector("#modal-body2 .modal-body")
 
 
-// Funcion para insertr los productos en la pagina Carrito de compras.
-// function insertarEnCarrito () {
-//     carrito.forEach((producto) => {
-//     const div = document.createElement('div');
-//     div.innerHTML =`
-//     <div clas = "producto">
-//     <img class = "imagen" src = ${producto.img}>
-//     <h3>${producto.nombre}</h3>
-//     <p>${producto.desc}</p>
-//     </div>
-//     `
-//     agregarPaginaCarrito.appendChild(div);
-// });
-// }
-
+ // Funcion para insertr los productos en la pagina Carrito de compras.
+ function insertarEnCarrito () {
+     carrito.forEach((producto) => {
+     agregarPaginaCarrito.innerHTML =`
+     <div clas = "producto">
+     <img class = "imagen" src = ${producto.img}>
+     <h3>${producto.nombre}</h3>
+     <p>${producto.desc}</p>
+     </div>
+     `
+     agregarPaginaCarrito.appendChild(div);
+ });
+ 
+ }
 
 
 // Funcion para que el boton carrito vaya a la pagina del carrito
