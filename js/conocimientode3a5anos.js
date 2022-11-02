@@ -29,7 +29,7 @@ Array.from(botonesComprar).forEach((boton) => {
 });
 
 
-// calse contructora con las que agrega los datos al carrito
+// Clase contructora con las que Creo las propiedaddes del producto
 class Producto{
     constructor(productoNombre, productoImagen){
         this.productoNombre = productoNombre;
