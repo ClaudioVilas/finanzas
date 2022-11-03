@@ -1,7 +1,9 @@
-const contenedorProductos = document.getElementById("contenedor.productos");
+
 const botonCarrito = document.getElementById("botoncarrito");
 const botonesComprar =  document.getElementsByClassName("botonagregar");
+const contenedorProductos = document.getElementById("contenedor.productos");
 
+const agregarAlCarrito = (id) => {}
 
 
 const carrito = [];
@@ -9,31 +11,38 @@ const carrito = [];
 
 // Funcion para crear el array en el HTML
 
+
+
 listaProductos.forEach((producto) => {
     const div = document.createElement('div');
     div.classList.add('producto');
     div.innerHTML =`
     <img class = "imagen" src = ${producto.img}>
     <h3 class = "nombre">${producto.nombre}</h3>
+    <p class ="tipo">${producto.tipo}</p>
     <p>${producto.desc}</p>
     <P>${producto.stock} Unidades</p>
     <button id ="idagregar" class="botonagregar" role = "button">Precio: USD ${producto.valor}</button>
     `
 
     contenedorProductos.appendChild(div);
-});
+
 
 
 Array.from(botonesComprar).forEach((boton) => {
     boton.addEventListener("click", agregarCarrito)
 });
 
+});
+
 
 // Clase contructora con las que Creo las propiedaddes del producto
 class Producto{
-    constructor(nombre, img){
+    constructor(nombre, tipo, img, valor){
         this.nombre = nombre;
+        this.tipo = tipo;
         this.img = img;
+        this.valor = valor;
     }
 }
 
@@ -43,10 +52,12 @@ class Producto{
 function agregarCarrito (e){
     boton = e.target;
     let divpadre = boton.parentElement;
-    let nombre = divpadre.getElementsByClassName("nombre").textContent;
+    let nombre = divpadre.querySelector(".nombre").textContent;
+    let tipo = divpadre.querySelector(".tipo").textContent;
     let img = divpadre.querySelector(".imagen").src;
 
-const agregarProducto = new Producto (nombre, img);
+
+const agregarProducto = new Producto (nombre, tipo, img);
 
 carrito.push(agregarProducto);
 
@@ -68,8 +79,7 @@ actualizarCarrito();
           aux += `
                     <div class="productomodal">
                         <img src= ${producto.img}>
-                            <h3 class="nombre"> ${producto.nombre}</h3>
-                            <p class=""> ${producto.tipo}</p>
+                            <h3> ${producto.nombre}</h3>
                             <button onClick = "eliminarDelCarrito(${producto.id})" class="btn btn-primary"> Eliminar del Carrito </button>
                         </div>
                     `;
@@ -91,6 +101,7 @@ const eliminarDelCarrito = (id) => {
   ///Función para vaciar todo el carrito por completo:
   
   const vaciarCarrito = document.getElementById('vaciarCarrito');
+
   vaciarCarrito.addEventListener('click', () => {
     carrito.splice(0, carrito.length);
     actualizarCarrito();
