@@ -1,5 +1,5 @@
 let listaProductos = [
-    {id: 1, nombre: "Microsoft", tipo: "SoftWare", valor: "1.200", desc: "Empresa Dedicada al desarrollo de Software.",stock: "500", img: '../imagenes/vilas/MICROSOFT.jpg'},
+    {id: 1, nombre: "Microsoft", tipo: "SoftWare", valor: "1200", desc: "Empresa Dedicada al desarrollo de Software.",stock: "500", img: '../imagenes/vilas/MICROSOFT.jpg'},
     {id: 2,nombre: "Apple", tipo: "Tecnologica", valor: "500", desc: "Empresa que se dedica al desarrollo de la tecnologia", stock: "500", img: '../imagenes/vilas/APPLE.jpg'},
     {id: 3, nombre: "Mercado Libre", tipo: "Ventas On-Line", valor: "250", desc: "Empresa dedicada al comercio y la venta on-line", stock: "1000", img: '../imagenes/vilas/ML.jpg'},
     {id: 4, nombre: "Audi", tipo: "Automotriz", valor: "222", desc: "Empresa dedicada a la produccion y el desarrollo automotor", stock: "1000", img: '../imagenes/vilas/AUDI.jpg'},

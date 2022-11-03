@@ -15,7 +15,7 @@ boton.addEventListener ("click", (e) =>{
 
         localStorage.setItem("mailUsuario", mailUsuario.value);
 
-        if (localStorage.getItem (nombreUsuario) == nombreUsuario.value) {
+        if (localStorage.getItem ("mailUsuario".length) != ("mailUsuario")) {
 
 
         Swal.fire('Tu datoa han diso enviados correctamente').then (() =>  {
@@ -32,10 +32,13 @@ boton.addEventListener ("click", (e) =>{
 }
 
 else{
-        alert ("ya existe");
+        alert ("ya existe")
+
+        ;
 }
      
-});
+}
+);
 
 
 

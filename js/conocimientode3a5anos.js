@@ -22,7 +22,7 @@ listaProductos.forEach((producto) => {
     <p class ="tipo">${producto.tipo}</p>
     <p>${producto.desc}</p>
     <P>${producto.stock} Unidades</p>
-    <button id ="idagregar" class="botonagregar" role = "button">Precio: USD ${producto.valor}</button>
+    <button id ="idagregar" class="botonagregar valor" role = "button">${producto.valor} USD</button>
     `
 
     contenedorProductos.appendChild(div);
@@ -55,9 +55,10 @@ function agregarCarrito (e){
     let nombre = divpadre.querySelector(".nombre").textContent;
     let tipo = divpadre.querySelector(".tipo").textContent;
     let img = divpadre.querySelector(".imagen").src;
+    let valor = parseInt(divpadre.querySelector(".valor").innerText);
 
 
-const agregarProducto = new Producto (nombre, tipo, img);
+const agregarProducto = new Producto (nombre, tipo, img, valor);
 
 carrito.push(agregarProducto);
 
@@ -80,6 +81,7 @@ actualizarCarrito();
                     <div class="productomodal">
                         <img src= ${producto.img}>
                             <h3> ${producto.nombre}</h3>
+                            <h5> ${producto.valor} USD</h5>
                             <button onClick = "eliminarDelCarrito(${producto.id})" class="btn btn-primary"> Eliminar del Carrito </button>
                         </div>
                     `;
@@ -112,11 +114,11 @@ const eliminarDelCarrito = (id) => {
   const totalCompra = document.getElementById('totalCompra');
   
   const calcularTotalCompra = () => {
-    let total = 0;
-    carrito.forEach((producto) => {
-      total += producto.valor * producto.cantidad;
-    });
-    totalCompra.innerHTML = total;
+    let total;
+   total = carrito.reduce((acc, el) => acc += el.valor, 0);
+      
+    totalCompra.innerHTML =  total;
+ 
   };
 
 

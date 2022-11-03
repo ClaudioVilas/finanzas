@@ -17,8 +17,8 @@
 
 <body>   
 
-<div class="contenedor"></div>
 
+<div class="contenedor2"></div>
 
 <header class="encabezado">
     <div class="nombre animate__animated animate__flipInX">Claudio Vilas</div>
@@ -33,36 +33,51 @@
 <h1 class="teasesoramos">TE ASESORAMOS DE FORMA GRATUITA!!!!</h1>
 
 
-<form class="datoslandin">
-    <label for="nombre_apellido">Nombre y Apellido</label>
-    <input type="text" name="nombre_apellido">
-</form>
+
+<form class="datospersonales" action="">
+<fieldset>
+    <legend>Datos Personales</legend>
+
+<div>
+  <label for="nombre_apellido">Nombre y Apellido</label>
+  <input id="nombreUsuario" type="text" name="nombre_apellido">
+</div>
+
+<div>
+  <label for="Edad">Edad</label>
+  <input type="number" name="Edad" id="edadUsuario">
+</div>
+
+<div>
+  <label for="mail">Mail</label>
+  <input type="mail" name="Mail" id="mailUsuario">
+</div>
+
+<div>
+    <label name = "formulario">Conocimientos</label>
+    <select id="expe">
+      <option value="1" id="sinconocimientos">Sin Conocimientos</option>
+      <option value="2" id="ceroatres">De 0 a 3 anos De Experiencia</option>
+      <option value="3" id="tresacinco">De 3 a 5 anos De Experiencia</option>
+      <option value="4" id="cincoomas">De 5 a mas anos De Experiencia</option>
+    </select>
+</div>
 
 
-<form class="datoslandin">
-    <label for="mail">Mail</label>
-    <input type="mail" name="Mail">
-</form>
-
-
-<form class="datoslandin">
-    <label for="Mobile">Mobile Phone</label>
-    <input type="number" name="Mobile Phone">
-</form>
-
-
-<div class="comentarios mb-3">
+<div id="comentarios" class="mb-3">
     <label for="exampleFormControlTextarea1" class="form-label">Dejanos Tus comentacios</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 
+<!-- a es un boton de bootstrap -->
+<button id="boton" role="button">Enviar</button>
 
-<div class="botoneslanding">
-    <a href="pages/inicio.html"><button type="button">Enviar y Seguir</button></a>
-    <a href="pages/inicio.html"><button type="button">Conocenos</button></a>
-    <button type="reset">Borrar Todo</button>
-</div>
+</fieldset>
+</form> 
 
-<script src="js/main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>;
+<script src="../js/index.js"></script>
+
+
 </body>
 </html>
