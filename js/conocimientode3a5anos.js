@@ -14,7 +14,7 @@ listaProductos.forEach((producto) => {
     div.classList.add('producto');
     div.innerHTML =`
     <img class = "imagen" src = ${producto.img}>
-    <h3>${producto.nombre}</h3>
+    <h3 class = "nombre">${producto.nombre}</h3>
     <p>${producto.desc}</p>
     <P>${producto.stock} Unidades</p>
     <button id ="idagregar" class="botonagregar" role = "button">Precio: USD ${producto.valor}</button>
@@ -31,9 +31,9 @@ Array.from(botonesComprar).forEach((boton) => {
 
 // Clase contructora con las que Creo las propiedaddes del producto
 class Producto{
-    constructor(productoNombre, productoImagen){
-        this.productoNombre = productoNombre;
-        this.productoImagen = productoImagen;
+    constructor(nombre, img){
+        this.nombre = nombre;
+        this.img = img;
     }
 }
 
@@ -43,42 +43,70 @@ class Producto{
 function agregarCarrito (e){
     boton = e.target;
     let divpadre = boton.parentElement;
-    let productoNombre = divpadre.querySelector("h3").textContent;
-    let productoImagen = divpadre.querySelector(".imagen").src;
+    let nombre = divpadre.getElementsByClassName("nombre").textContent;
+    let img = divpadre.querySelector(".imagen").src;
 
-const agregarProducto = new Producto (productoNombre, productoImagen);
+const agregarProducto = new Producto (nombre, img);
 
 carrito.push(agregarProducto);
 
 console.log(carrito);
 
-insertarEnCarrito();
+actualizarCarrito();
 
  }
 
 
 //  Lugar para agregar los productos en el modal
- const agregarPaginaCarrito = document.querySelector("#modal-body2")
+ const contenedorCarrito = document.querySelector("#modal-body2")
 
 
  // Funcion para insertr los productos en la pagina Carrito de compras.
-    function insertarEnCarrito () {
-     carrito.forEach((producto) => {
-     agregarPaginaCarrito.innerHTML +=`
-     <div clas = "producto">
-     <img src = ${producto.img}>
-     <h3>${producto.nombre}</h3>
-     <p>${producto.desc}</p>
-     </div>
-     `
- });
- 
- }
+    function actualizarCarrito () {
+        let aux = '';
+        carrito.forEach((producto) => {
+          aux += `
+                    <div class="productomodal">
+                        <img src= ${producto.img}>
+                            <h3 class="nombre"> ${producto.nombre}</h3>
+                            <p class=""> ${producto.tipo}</p>
+                            <button onClick = "eliminarDelCarrito(${producto.id})" class="btn btn-primary"> Eliminar del Carrito </button>
+                        </div>
+                    `;
+        });
+      
+        contenedorCarrito.innerHTML = aux;
+        calcularTotalCompra();
+      }
 
 
-// Funcion para que el boton carrito vaya a la pagina del carrito
-// botonCarrito.addEventListener ("click", () => {
-// window.location.href = "../pages/carritodecompra.html"});
+//Agrego una función que elimine el producto del carrito:
+  
+const eliminarDelCarrito = (id) => {
+    const producto = carrito.find((producto) => producto.id === id);
+    carrito.splice(carrito.indexOf(producto), 1);
+    actualizarCarrito();
+  };
+  
+  ///Función para vaciar todo el carrito por completo:
+  
+  const vaciarCarrito = document.getElementById('vaciarCarrito');
+  vaciarCarrito.addEventListener('click', () => {
+    carrito.splice(0, carrito.length);
+    actualizarCarrito();
+  });
+  
+  //Creo una función que me calcule el total del carrito:
+  
+  const totalCompra = document.getElementById('totalCompra');
+  
+  const calcularTotalCompra = () => {
+    let total = 0;
+    carrito.forEach((producto) => {
+      total += producto.valor * producto.cantidad;
+    });
+    totalCompra.innerHTML = total;
+  };
 
 
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
