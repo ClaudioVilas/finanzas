@@ -15,7 +15,7 @@ boton.addEventListener ("click", (e) =>{
 
         localStorage.setItem("mailUsuario", mailUsuario.value);
 
-        if (localStorage.getItem ("mailUsuario") == localStorage.getItem ("mailUsuario")) { 
+        if (localStorage.getItem ("mailUsuario") != localStorage.getItem ("mailUsuario")) { 
 
 
         Swal.fire('Tu datoa han diso enviados correctamente').then (() =>  {
