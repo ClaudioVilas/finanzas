@@ -8,6 +8,7 @@ const agregarAlCarrito = (id) => {}
 
 const carrito = [];
 
+localStorage.setItem ("guardadocarrito", carrito);
 
 // Funcion para crear el array en el HTML
 
