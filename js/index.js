@@ -18,7 +18,7 @@ boton.addEventListener ("click", (e) =>{
         if (localStorage.getItem ("mailUsuario") != document.querySelector("#mailUsuario").value) { 
 
 
-        Swal.fire('Tu datoa han diso enviados correctamente').then (() =>  {
+        Swal.fire('Tu datos han sido enviados correctamente').then (() =>  {
         
         if (document.getElementById ("expe").value == 1){document.location.href ="../pages/sinconocimientos.html"}
 
@@ -32,8 +32,8 @@ boton.addEventListener ("click", (e) =>{
 }
 
 else{
-        alert ("ya existe")
-
+        Swal.fire('Tu datos ya han sido ingresado te enviaremos al carrito de compras')
+        {document.location.href ="../pages/conocimientode3a5anos.html"}
         ;
 }
      
