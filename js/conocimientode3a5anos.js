@@ -122,6 +122,51 @@ const eliminarDelCarrito = (id) => {
   };
 
 
+// Mail de confirmacion
+
+
+let mailUsuario = localStorage.getItem("mailUsuario");
+myform.innerText = `${mailUsuario}`;
+
+
+const form = document.getElementById("myform");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      let status = document.getElementById("my-form-status");
+      let data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          Swal.fire('Tu datos han sido enviados correctamente');
+          form.reset()
+        } 
+        else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              alert ( data["errors"].map(error => error["message"]).join(", "))
+            } else {
+              Swal.fire("Oops! There was a problem submitting your form")
+            }
+          })
+        }
+      }).catch(error => {
+        Swal.fire("Oops! There was a problem submitting your form")
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
+
+
+
+
+
+
+
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
 let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
 banner2.innerText = `Bienvenido ${UsuarioEncabezado}`;

@@ -22,10 +22,19 @@ body{
     opacity: 70%;
     font-size: larger;
         .barra2, .barra3{
-            margin-right: 1%;
-            margin-left: 1%;
+            margin-right: 0%;
+            margin-left: 0%;
+
+            
+    &:hover{
+        color: rgb(136, 248, 136);
+         }
     }
 }
+
+
+
+
 
 /**encabezado que figura en todas las paginas Claudio vilas finanzas**/
 .encabezado{
@@ -522,3 +531,31 @@ justify-items: center;
     transition: 1s;
 }}
 
+
+
+#nomostrar{
+    display: none;
+}
+
+.imagenbtc{
+    width: 100px;
+    height: 100px;
+    margin-left: 45%;
+}
+
+.CompraDeAcciones2{
+    width: 500px;
+    border-style: dashed;
+    border-color: aliceblue;
+    border-width: 2px;
+    position: absolute;
+    display: flex;
+    font-size: x-large;
+    margin-top: 15%;
+    margin-left: 35%;
+    line-height: 35px;
+    color: $font-color; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding: 1%;
+  }

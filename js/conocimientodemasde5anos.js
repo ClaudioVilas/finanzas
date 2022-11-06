@@ -1,24 +1,3 @@
-// const botonCunsulta = document.getElementById("botonCunsulta");
-// const datoDelaApi = document.getElementById("datoDelaApi");
-
-
-// const obtenerDatos = () => {
-//     fetch ("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo"
-//     ) 
-//     .then(response => response.json())
-//     .then (result =>{console.log(result)
-
-//     } )}
-
-    
-
-
-
-// botonCunsulta.onclick = () => {
-//     obtenerDatos();
-// }
-
-
 let datos = document.getElementById("datoDelaApi")
 
 
@@ -33,18 +12,39 @@ ws.onmessage = (event) => {
 
 
 datos.innerHTML = ` <div> 
-<img class = "imagen" src = ../imagenes/vilas/bitcoin.jpg>
+<img class = "imagenbtc" src = ../imagenes/vilas/bitcoin.jpg>
 ws.onmessage();
 </div>`
 
 
 
-// let ws = new WebSocket("wss://streaming.forexpros.com/echo/483/bsgommhh/websocket");
-// let stockPriceElement = document.getElementById("stock-price")
+
+let botonnew = document.getElementById("botonnew")
+
+class Accion{
+    constructor (nombre, cantidad, sector, valor){
+    this.nombre = nombre;
+    this.cantidad = cantidad;
+    this.sector = sector;
+    this.valor = valor;
+    }
+};
+
+const seleccionAcciones = [];
 
 
-// ws.onmessage = (event) => {
-//     let stockObject = JSON.parse(event.data);
-//     stockPriceElement.innerHTML = parseFloat(stockObject.p).toFixed(2);
-// };
+function accionNueva  () {
+let nombre = document.querySelector("#nombrenew").value;
+let cantidad = document.getElementById("cantidadnew").value;
+let sector = document.getElementById("sectornew").value;
+let valor = document.getElementById("valornew").value;
 
+let accionNueva = new Accion (nombre, cantidad, sector, valor);
+seleccionAcciones.push(accionNueva);
+}
+
+botonnew.addEventListener("click", accionNueva)
+
+// LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
+let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
+banner2.innerText = `Bienvenido ${UsuarioEncabezado}`;

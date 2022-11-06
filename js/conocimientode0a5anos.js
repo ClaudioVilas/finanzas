@@ -24,9 +24,14 @@ listaProductos.forEach((producto) => {
 });
 
 
-
-
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
+
 let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
 banner2.innerText = `Bienvenido ${UsuarioEncabezado}`;
 
+
+
+
+
+
+ 
