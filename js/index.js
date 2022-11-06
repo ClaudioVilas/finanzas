@@ -43,7 +43,7 @@ else{
 
 
 
-var form = document.getElementById("my-form");
+const form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
       event.preventDefault();
