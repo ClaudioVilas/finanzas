@@ -1,22 +1,25 @@
-const botonCunsulta = document.getElementById("botonCunsulta");
-const datoDelaApi = document.getElementById("datoDelaApi");
+// const botonCunsulta = document.getElementById("botonCunsulta");
+// const datoDelaApi = document.getElementById("datoDelaApi");
 
 
-const obtenerDatos = () => {
-    fetch ("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo"
-    ) 
-    .then(response => response.json())
-    .then (result =>{console.log(result)
+// const obtenerDatos = () => {
+//     fetch ("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo"
+//     ) 
+//     .then(response => response.json())
+//     .then (result =>{console.log(result)
 
-    } )}
+//     } )}
 
     
 
 
 
-botonCunsulta.onclick = () => {
-    obtenerDatos();
-}
+// botonCunsulta.onclick = () => {
+//     obtenerDatos();
+// }
+
+
+let datos = document.getElementById("datoDelaApi")
 
 
 let ws = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
@@ -27,6 +30,12 @@ ws.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);
     stockPriceElement.innerHTML = parseFloat(stockObject.p).toFixed(2);
 };
+
+
+datos.innerHTML = ` <div> 
+<img class = "imagen" src = ../imagenes/vilas/bitcoin.jpg>
+ws.onmessage();
+</div>`
 
 
 

@@ -3,7 +3,7 @@
 
 
 let boton = document.getElementById("boton");
-
+let mailUsuario = document.querySelector("#mailUsuario")
 
 boton.addEventListener ("click", (e) =>{
 
@@ -15,7 +15,7 @@ boton.addEventListener ("click", (e) =>{
 
         localStorage.setItem("mailUsuario", mailUsuario.value);
 
-        if (localStorage.getItem ("mailUsuario".length) != ("mailUsuario")) {
+        if (localStorage.getItem ("mailUsuario") == localStorage.getItem ("mailUsuario")) { 
 
 
         Swal.fire('Tu datoa han diso enviados correctamente').then (() =>  {
