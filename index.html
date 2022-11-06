@@ -34,7 +34,7 @@
 
 
 
-<form class="datospersonales" action="">
+<form id="my-form" class="datospersonales" action="https://formspree.io/f/myyvbrop"  method="POST">
 <fieldset>
     <legend>Datos Personales</legend>
 
@@ -49,8 +49,8 @@
 </div>
 
 <div>
-  <label for="mail">Mail</label>
-  <input type="mail" name="Mail" id="mailUsuario">
+  <label for="mail">Email</label>
+  <input type="email" name="email" id="mailUsuario">
 </div>
 
 <div>
@@ -63,15 +63,14 @@
     </select>
 </div>
 
-
 <div id="comentarios" class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Dejanos Tus comentacios</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <label type="text" name="message" for="exampleFormControlTextarea1" class="form-label">Dejanos Tus comentacios: </label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 
 <!-- a es un boton de bootstrap -->
-<button id="boton" role="button">Enviar</button>
-
+<button id="my-form-button" role="button" type="submit">Enviar</button>
+<p id="my-form-status"></p>
 </fieldset>
 </form> 
 
