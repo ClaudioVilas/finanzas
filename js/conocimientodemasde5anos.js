@@ -41,9 +41,15 @@ let valor = document.getElementById("valornew").value;
 
 let accionNueva = new Accion (nombre, cantidad, sector, valor);
 seleccionAcciones.push(accionNueva);
+
 }
 
 botonnew.addEventListener("click", accionNueva)
+
+
+localStorage.setItem ("accionstorage", seleccionAcciones)
+
+
 
 // LLAMA AL NOMBRE DE USUARIO GUARDADO EN EL LOCAL Y LO AGREGA EN EL BANNER ARRIBA A LA DERECHA
 let UsuarioEncabezado = localStorage.getItem("nombreUsuario");
