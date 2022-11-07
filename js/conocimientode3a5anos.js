@@ -7,7 +7,7 @@ const contenedorProductos = document.getElementById("contenedor.productos");
 
 
 const carrito = [];
-localStorage.setItem("agregarCarrito", JSON.stringify(carrito));
+localStorage.setItem("actualizarCarrito", JSON.stringify(carrito));
 
 
 // Funcion para crear el array en el HTML
@@ -63,7 +63,7 @@ const agregarProducto = new Producto (nombre, tipo, img, valor);
 
 carrito.push(agregarProducto);
 
-localStorage.setItem ("agregarCarrito", carrito);
+
 
 console.log(carrito);
 
@@ -91,6 +91,9 @@ actualizarCarrito();
         });
       
         contenedorCarrito.innerHTML = aux;
+
+        localStorage.setItem ("actualizarCarrito", actualizarCarrito);
+        
         calcularTotalCompra();
       }
 
