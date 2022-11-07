@@ -20,6 +20,9 @@ ws.onmessage();
 
 
 let botonnew = document.getElementById("botonnew")
+botonnew.addEventListener("click", accionNueva)
+
+
 
 class Accion{
     constructor (nombre, cantidad, sector, valor){
@@ -33,21 +36,19 @@ class Accion{
 const seleccionAcciones = [];
 
 
-function accionNueva  () {
-let nombre = document.querySelector("#nombrenew").value;
-let cantidad = document.getElementById("cantidadnew").value;
-let sector = document.getElementById("sectornew").value;
-let valor = document.getElementById("valornew").value;
+function accionNueva  (e) {
+    e.preventDefault()
+    let nombre = document.querySelector("#nombrenew").value;
+    let cantidad = document.getElementById("cantidadnew").value;
+    let sector = document.getElementById("sectornew").value;
+    let valor = document.getElementById("valornew").value;
 
 let accionNueva = new Accion (nombre, cantidad, sector, valor);
 seleccionAcciones.push(accionNueva);
-
+localStorage.setItem ("accionstorage", seleccionAcciones)
 }
 
-botonnew.addEventListener("click", accionNueva)
 
-
-localStorage.setItem ("accionstorage", seleccionAcciones)
 
 
 
