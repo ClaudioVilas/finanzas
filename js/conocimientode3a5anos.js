@@ -3,7 +3,7 @@ const botonCarrito = document.getElementById("botoncarrito");
 const botonesComprar =  document.getElementsByClassName("botonagregar");
 const contenedorProductos = document.getElementById("contenedor.productos");
 const multiplicarproducto = document.getElementsByClassName("multiplicarproducto")
-const cantidad = document.getElementById("inmpucarrito")
+const cantidad = document.querySelector("#inputcarrito")
 
 
 // const agregarAlCarrito = (id) => {}
@@ -47,6 +47,7 @@ class Producto{
         this.tipo = tipo;
         this.img = img;
         this.valor = valor;
+
     }
 }
 
@@ -60,6 +61,7 @@ function agregarCarrito (e){
     let tipo = divpadre.querySelector(".tipo").textContent;
     let img = divpadre.querySelector(".imagen").src;
     let valor = parseInt(divpadre.querySelector(".valor").innerText);
+  
 
 
 const agregarProducto = new Producto (nombre, tipo, img, valor);
@@ -88,7 +90,7 @@ actualizarCarrito();
                         <img src= ${producto.img}>
                             <h3> ${producto.nombre}</h3>
                             <h5> ${producto.valor} USD</h5>
-                            <input type ="number" id="inmpucarrito" value = "1" class ="multiplicarproducto">
+                            <input type ="number" id="inputcarrito" value = "1" class ="multiplicarproducto">
                             <button onClick = "eliminarDelCarrito(${producto.id})" class="btn btn-primary"> Eliminar del Carrito </button>
                         </div>
                     `;
@@ -124,9 +126,8 @@ const eliminarDelCarrito = (id) => {
   const totalCompra = document.getElementById('totalCompra');
   
   const calcularTotalCompra = () => {
-    // let total;
-   let total = carrito.reduce((acc, producto) => {return acc + (producto.precio * producto.cantidad)},0);
-  //  total = carrito.reduce((acc, el) => acc += el.valor, 0);
+    let total;
+   total = carrito.reduce((acc, el) => acc += (el.valor * cantidad.textContent), 0);
       
     totalCompra.innerHTML =  total;
  
