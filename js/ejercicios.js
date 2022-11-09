@@ -229,3 +229,29 @@
 // })
 
 
+
+
+// para probar el codigo
+
+
+function agregarCarrito (e){
+    boton = e.target;
+    let divpadre = boton.parentElement;
+    let nombre = divpadre.querySelector(".nombre").textContent;
+    let tipo = divpadre.querySelector(".tipo").textContent;
+    let img = divpadre.querySelector(".imagen").src;
+    let valor = parseInt(divpadre.querySelector(".valor").innerText);
+
+
+const agregarProducto = new Producto (nombre, tipo, img, valor);
+
+carrito.push(agregarProducto);
+
+localStorage.setItem("carrito", JSON.stringify(carrito));
+
+console.log(carrito);
+
+actualizarCarrito();
+
+ }
+
