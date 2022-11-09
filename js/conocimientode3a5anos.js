@@ -127,7 +127,7 @@ const eliminarDelCarrito = (id) => {
   
   const calcularTotalCompra = () => {
     let total;
-   total = carrito.reduce((acc, el) => acc += (el.valor * cantidad), 0);
+   total = parseInt(carrito.reduce((acc, el) => acc += el.valor, 0));
       
     totalCompra.innerHTML =  total;
  
