@@ -3,13 +3,14 @@ const botonCarrito = document.getElementById("botoncarrito");
 const botonesComprar =  document.getElementsByClassName("botonagregar");
 const contenedorProductos = document.getElementById("contenedor.productos");
 const multiplicarproducto = document.getElementsByClassName("multiplicarproducto")
-const cantidad = document.querySelector("#inputcarrito")
+const cantidad = document.getElementById("inputcarrito")
 
 
 // const agregarAlCarrito = (id) => {}
 
 
 const carrito = [];
+
 
 
 
@@ -63,14 +64,11 @@ function agregarCarrito (e){
     let valor = parseInt(divpadre.querySelector(".valor").innerText);
   
 
-
 const agregarProducto = new Producto (nombre, tipo, img, valor);
 
 carrito.push(agregarProducto);
 
 localStorage.setItem("carrito", JSON.stringify(carrito));
-
-console.log(carrito);
 
 actualizarCarrito();
 
@@ -154,37 +152,37 @@ let mailUsuario = localStorage.getItem("mailUsuario");
 myform.innerText = mailUsuario;
 
 
-// const form = document.getElementById("myform");
+const form = document.getElementById("myform");
     
-//     async function handleSubmit(event) {
-//       event.preventDefault();
-//       let status = document.getElementById("my-form-status");
-//       let data = new FormData(event.target);
-//       fetch(event.target.action, {
-//         method: form.method,
-//         body: data,
-//         headers: {
-//             'Accept': 'application/json'
-//         }
-//       }).then(response => {
-//         if (response.ok) {
-//           Swal.fire('Tu datos han sido enviados correctamente');
-//           form.reset()
-//         } 
-//         else {
-//           response.json().then(data => {
-//             if (Object.hasOwn(data, 'errors')) {
-//               alert ( data["errors"].map(error => error["message"]).join(", "))
-//             } else {
-//               Swal.fire("Oops! There was a problem submitting your form")
-//             }
-//           })
-//         }
-//       }).catch(error => {
-//         Swal.fire("Oops! There was a problem submitting your form")
-//       });
-//     }
-//     form.addEventListener("submit", handleSubmit);
+    async function handleSubmit(event) {
+      event.preventDefault();
+      let status = document.getElementById("my-form-status");
+      let data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          Swal.fire('Tu datos han sido enviados correctamente');
+          form.reset()
+        } 
+        else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              alert ( data["errors"].map(error => error["message"]).join(", "))
+            } else {
+              Swal.fire("Oops! There was a problem submitting your form")
+            }
+          })
+        }
+      }).catch(error => {
+        Swal.fire("Oops! There was a problem submitting your form")
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
 
 
 
