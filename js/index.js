@@ -19,7 +19,7 @@ boton.addEventListener ("click", (e) =>{
 
         Swal.fire('Tu datos han sido enviados correctamente').then (() =>  {
         
-        if (document.getElementById ("expe").value == 1){document.location.href ="../pages/sinconocimientos.html"}
+        if (document.getElementById ("expe").value == 1){document.location.href ="../pages/conocimientode3a5anos.html"}
 
         else if (document.getElementById("expe").value == 2 ){ document.location.href ="../pages/conocimientode0a5anos.html"}
 
