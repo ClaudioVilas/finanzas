@@ -129,7 +129,9 @@ const eliminarDelCarrito = (id) => {
   
   const calcularTotalCompra = () => {
 
-    let total = carrito.reduce((acc, {valor , cantidad}) => parseInt(acc + valor * cantidad), 0);
+    let total = carrito.reduce((acc, {valor , cantidad}) => acc + parseint(valor * cantidad), 0); 
+
+    // let total = carrito.reduce((acc, {valor , cantidad}) => parseInt(acc + valor * cantidad), 0);
 
     // let total = carrito.reduce((acc, el) => acc +=  el.valor, 0);
 
